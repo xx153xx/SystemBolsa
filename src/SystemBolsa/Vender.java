@@ -27,42 +27,283 @@ public class Vender extends javax.swing.JInternalFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jPanel2 = new javax.swing.JPanel();
+        jpnVenda = new javax.swing.JPanel();
+        listAcaoVd = new java.awt.Choice();
+        txtPrecoVd = new javax.swing.JTextField();
+        txtQuantAcaoVd = new javax.swing.JTextField();
+        txtOrdemVd = new javax.swing.JTextField();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
+        btnVenda = new javax.swing.JButton();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
+        ldlLoteMinVd = new javax.swing.JLabel();
+        lblFatorCotVd = new javax.swing.JLabel();
+        lblNegocioVd = new javax.swing.JLabel();
+        lblPrecoAtualVd = new javax.swing.JLabel();
+        jLabel16 = new javax.swing.JLabel();
+        lblLucro = new javax.swing.JLabel();
+        jLabel18 = new javax.swing.JLabel();
+        jLabel19 = new javax.swing.JLabel();
+        lblValorLoteVd = new javax.swing.JLabel();
+        jLabel21 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        lblCarteira = new javax.swing.JLabel();
+        jLabel15 = new javax.swing.JLabel();
+        lblPrecoCompra = new javax.swing.JLabel();
 
         setClosable(true);
+        setIconifiable(true);
         setMaximizable(true);
         setResizable(true);
         setTitle("Vendas");
 
-        jPanel2.setBackground(new java.awt.Color(255, 255, 255));
+        jpnVenda.setBackground(new java.awt.Color(255, 255, 255));
 
-        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
-        jPanel2.setLayout(jPanel2Layout);
-        jPanel2Layout.setHorizontalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 643, Short.MAX_VALUE)
+        txtPrecoVd.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
+        txtPrecoVd.setText("0,00");
+        txtPrecoVd.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtPrecoVdActionPerformed(evt);
+            }
+        });
+
+        txtQuantAcaoVd.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
+        txtQuantAcaoVd.setText("0");
+        txtQuantAcaoVd.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtQuantAcaoVdActionPerformed(evt);
+            }
+        });
+
+        txtOrdemVd.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
+        txtOrdemVd.setText("0,00");
+
+        jLabel4.setText("Ordem R$");
+
+        jLabel3.setText("Quantidade");
+
+        jLabel2.setText("Preço R$");
+
+        jLabel1.setText("Ações");
+
+        btnVenda.setText("Prosseguir");
+
+        jLabel6.setText("Preço atual: ");
+
+        jLabel7.setText("Negocios: ");
+
+        jLabel8.setText("Fator de cotação: ");
+
+        jLabel9.setText("Lote minímo: ");
+
+        ldlLoteMinVd.setText("0");
+
+        lblFatorCotVd.setText("0");
+
+        lblNegocioVd.setText("0");
+
+        lblPrecoAtualVd.setText("0,00");
+
+        jLabel16.setText("(");
+
+        lblLucro.setText("0.00");
+
+        jLabel18.setText("%)");
+
+        jLabel19.setText(")");
+
+        lblValorLoteVd.setText("0,00");
+
+        jLabel21.setText("(");
+
+        jLabel5.setText("Em sua carteira: ");
+
+        lblCarteira.setText("0");
+
+        jLabel15.setText("Preço de compra: ");
+
+        lblPrecoCompra.setText("0,00");
+
+        javax.swing.GroupLayout jpnVendaLayout = new javax.swing.GroupLayout(jpnVenda);
+        jpnVenda.setLayout(jpnVendaLayout);
+        jpnVendaLayout.setHorizontalGroup(
+            jpnVendaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jpnVendaLayout.createSequentialGroup()
+                .addGap(18, 18, 18)
+                .addGroup(jpnVendaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(jpnVendaLayout.createSequentialGroup()
+                        .addGroup(jpnVendaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jpnVendaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jpnVendaLayout.createSequentialGroup()
+                                    .addComponent(jLabel2)
+                                    .addGap(52, 52, 52))
+                                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jpnVendaLayout.createSequentialGroup()
+                                    .addComponent(jLabel3)
+                                    .addGap(39, 39, 39))
+                                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jpnVendaLayout.createSequentialGroup()
+                                    .addComponent(jLabel4)
+                                    .addGap(47, 47, 47)))
+                            .addGroup(jpnVendaLayout.createSequentialGroup()
+                                .addComponent(jLabel1)
+                                .addGap(66, 66, 66)))
+                        .addGroup(jpnVendaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(listAcaoVd, javax.swing.GroupLayout.DEFAULT_SIZE, 212, Short.MAX_VALUE)
+                            .addComponent(txtPrecoVd)
+                            .addComponent(txtQuantAcaoVd)
+                            .addComponent(txtOrdemVd, javax.swing.GroupLayout.DEFAULT_SIZE, 212, Short.MAX_VALUE)))
+                    .addComponent(btnVenda))
+                .addGap(63, 63, 63)
+                .addGroup(jpnVendaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jpnVendaLayout.createSequentialGroup()
+                        .addComponent(jLabel15)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(lblPrecoCompra))
+                    .addGroup(jpnVendaLayout.createSequentialGroup()
+                        .addComponent(jLabel5)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(lblCarteira))
+                    .addGroup(jpnVendaLayout.createSequentialGroup()
+                        .addComponent(jLabel7)
+                        .addGap(18, 18, 18)
+                        .addComponent(lblNegocioVd))
+                    .addGroup(jpnVendaLayout.createSequentialGroup()
+                        .addComponent(jLabel6)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(lblPrecoAtualVd)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jLabel16)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(lblLucro)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel18))
+                    .addGroup(jpnVendaLayout.createSequentialGroup()
+                        .addComponent(jLabel8)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(lblFatorCotVd))
+                    .addGroup(jpnVendaLayout.createSequentialGroup()
+                        .addComponent(jLabel9)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(ldlLoteMinVd)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel21)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(lblValorLoteVd)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel19)))
+                .addContainerGap(99, Short.MAX_VALUE))
         );
-        jPanel2Layout.setVerticalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 504, Short.MAX_VALUE)
+        jpnVendaLayout.setVerticalGroup(
+            jpnVendaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jpnVendaLayout.createSequentialGroup()
+                .addGap(37, 37, 37)
+                .addGroup(jpnVendaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(jpnVendaLayout.createSequentialGroup()
+                        .addGroup(jpnVendaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel6)
+                            .addComponent(lblPrecoAtualVd)
+                            .addComponent(jLabel16)
+                            .addComponent(lblLucro)
+                            .addComponent(jLabel18))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(jpnVendaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel7)
+                            .addComponent(lblNegocioVd))
+                        .addGap(5, 5, 5)
+                        .addGroup(jpnVendaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel8)
+                            .addComponent(lblFatorCotVd))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jpnVendaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel9)
+                            .addComponent(ldlLoteMinVd)
+                            .addComponent(jLabel21)
+                            .addComponent(lblValorLoteVd)
+                            .addComponent(jLabel19)))
+                    .addGroup(jpnVendaLayout.createSequentialGroup()
+                        .addGroup(jpnVendaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel1)
+                            .addComponent(listAcaoVd, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(18, 18, 18)
+                        .addGroup(jpnVendaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel2)
+                            .addComponent(txtPrecoVd, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(25, 25, 25)
+                        .addGroup(jpnVendaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(txtQuantAcaoVd, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel3))
+                        .addGap(31, 31, 31)
+                        .addGroup(jpnVendaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jLabel4)
+                            .addComponent(txtOrdemVd, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(34, 34, 34)
+                        .addComponent(btnVenda)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jpnVendaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel5)
+                    .addComponent(lblCarteira))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jpnVendaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel15)
+                    .addComponent(lblPrecoCompra))
+                .addContainerGap(86, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jpnVenda, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jpnVenda, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    private void txtPrecoVdActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtPrecoVdActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtPrecoVdActionPerformed
+
+    private void txtQuantAcaoVdActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtQuantAcaoVdActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtQuantAcaoVdActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JPanel jPanel2;
+    private javax.swing.JButton btnVenda;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel15;
+    private javax.swing.JLabel jLabel16;
+    private javax.swing.JLabel jLabel18;
+    private javax.swing.JLabel jLabel19;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel21;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
+    private javax.swing.JPanel jpnVenda;
+    private javax.swing.JLabel lblCarteira;
+    private javax.swing.JLabel lblFatorCotVd;
+    private javax.swing.JLabel lblLucro;
+    private javax.swing.JLabel lblNegocioVd;
+    private javax.swing.JLabel lblPrecoAtualVd;
+    private javax.swing.JLabel lblPrecoCompra;
+    private javax.swing.JLabel lblValorLoteVd;
+    private javax.swing.JLabel ldlLoteMinVd;
+    private java.awt.Choice listAcaoVd;
+    private javax.swing.JTextField txtOrdemVd;
+    private javax.swing.JTextField txtPrecoVd;
+    private javax.swing.JTextField txtQuantAcaoVd;
     // End of variables declaration//GEN-END:variables
 }

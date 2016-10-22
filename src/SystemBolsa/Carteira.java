@@ -36,6 +36,7 @@ public class Carteira extends javax.swing.JInternalFrame {
         tbCarteira03 = new javax.swing.JTable();
 
         setClosable(true);
+        setIconifiable(true);
         setMaximizable(true);
         setTitle("Carteira");
 

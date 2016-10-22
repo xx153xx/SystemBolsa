@@ -27,32 +27,34 @@ public class TelaPrincipal extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jpnPrincipal = new javax.swing.JPanel();
+        jpnPrincipal = new javax.swing.JDesktopPane();
         jMenuBar1 = new javax.swing.JMenuBar();
         menuCarteira = new javax.swing.JMenu();
         MenuCarteira2 = new javax.swing.JMenuItem();
         menuHistorico = new javax.swing.JMenu();
         menuHistorico2 = new javax.swing.JMenuItem();
         menuCotacao = new javax.swing.JMenu();
-        menuCotacao2 = new javax.swing.JMenuItem();
+        menuEmpresa2 = new javax.swing.JMenuItem();
         menuHomeBroker = new javax.swing.JMenu();
         menuHomeBroker2 = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("SystemBolsa");
+        setMaximizedBounds(new java.awt.Rectangle(0, 0, 0, 0));
         setResizable(false);
-
-        jpnPrincipal.setBackground(new java.awt.Color(255, 255, 255));
 
         javax.swing.GroupLayout jpnPrincipalLayout = new javax.swing.GroupLayout(jpnPrincipal);
         jpnPrincipal.setLayout(jpnPrincipalLayout);
         jpnPrincipalLayout.setHorizontalGroup(
             jpnPrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 754, Short.MAX_VALUE)
+            .addGap(0, 1209, Short.MAX_VALUE)
         );
         jpnPrincipalLayout.setVerticalGroup(
             jpnPrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 550, Short.MAX_VALUE)
+            .addGap(0, 633, Short.MAX_VALUE)
         );
+
+        getContentPane().add(jpnPrincipal, java.awt.BorderLayout.CENTER);
 
         menuCarteira.setText("Carteira");
         menuCarteira.addActionListener(new java.awt.event.ActionListener() {
@@ -85,13 +87,13 @@ public class TelaPrincipal extends javax.swing.JFrame {
 
         menuCotacao.setText("Cotações");
 
-        menuCotacao2.setText("Cotações");
-        menuCotacao2.addActionListener(new java.awt.event.ActionListener() {
+        menuEmpresa2.setText("Cotações");
+        menuEmpresa2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                menuCotacao2ActionPerformed(evt);
+                menuEmpresa2ActionPerformed(evt);
             }
         });
-        menuCotacao.add(menuCotacao2);
+        menuCotacao.add(menuEmpresa2);
 
         jMenuBar1.add(menuCotacao);
 
@@ -108,21 +110,6 @@ public class TelaPrincipal extends javax.swing.JFrame {
         jMenuBar1.add(menuHomeBroker);
 
         setJMenuBar(jMenuBar1);
-
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(jpnPrincipal, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(jpnPrincipal, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
-        );
 
         pack();
         setLocationRelativeTo(null);
@@ -143,9 +130,11 @@ public class TelaPrincipal extends javax.swing.JFrame {
         ob.setVisible(true);
     }//GEN-LAST:event_menuHistorico2ActionPerformed
 
-    private void menuCotacao2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuCotacao2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_menuCotacao2ActionPerformed
+    private void menuEmpresa2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuEmpresa2ActionPerformed
+       Cotacao ob = new Cotacao();
+        jpnPrincipal.add(ob);
+        ob.setVisible(true);
+    }//GEN-LAST:event_menuEmpresa2ActionPerformed
 
     private void menuHomeBroker2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuHomeBroker2ActionPerformed
         HomeBroker ob = new HomeBroker();
@@ -191,10 +180,10 @@ public class TelaPrincipal extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JMenuItem MenuCarteira2;
     private javax.swing.JMenuBar jMenuBar1;
-    private javax.swing.JPanel jpnPrincipal;
+    private javax.swing.JDesktopPane jpnPrincipal;
     private javax.swing.JMenu menuCarteira;
     private javax.swing.JMenu menuCotacao;
-    private javax.swing.JMenuItem menuCotacao2;
+    private javax.swing.JMenuItem menuEmpresa2;
     private javax.swing.JMenu menuHistorico;
     private javax.swing.JMenuItem menuHistorico2;
     private javax.swing.JMenu menuHomeBroker;

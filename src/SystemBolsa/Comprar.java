@@ -27,42 +27,249 @@ public class Comprar extends javax.swing.JInternalFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jPanel2 = new javax.swing.JPanel();
+        jpnCompra = new javax.swing.JPanel();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        txtPrecoCompra = new javax.swing.JTextField();
+        jLabel3 = new javax.swing.JLabel();
+        txtQuantCompra = new javax.swing.JTextField();
+        jLabel4 = new javax.swing.JLabel();
+        txtOrdemRs = new javax.swing.JTextField();
+        listAcao = new java.awt.Choice();
+        btnComprar = new javax.swing.JButton();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
+        lblPrecoAtual = new javax.swing.JLabel();
+        lblOscila = new javax.swing.JLabel();
+        lblNegocio = new javax.swing.JLabel();
+        lblFatorCot = new javax.swing.JLabel();
+        jLabel19 = new javax.swing.JLabel();
+        lblValorLot = new javax.swing.JLabel();
+        jLabel21 = new javax.swing.JLabel();
+        lblLoteMin = new javax.swing.JLabel();
 
         setClosable(true);
+        setIconifiable(true);
         setMaximizable(true);
         setResizable(true);
         setTitle("Compra");
 
-        jPanel2.setBackground(new java.awt.Color(255, 255, 255));
+        jpnCompra.setBackground(new java.awt.Color(255, 255, 255));
 
-        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
-        jPanel2.setLayout(jPanel2Layout);
-        jPanel2Layout.setHorizontalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 629, Short.MAX_VALUE)
+        jLabel1.setText("Ações");
+
+        jLabel2.setText("Preço R$");
+
+        txtPrecoCompra.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
+        txtPrecoCompra.setText("0,00");
+        txtPrecoCompra.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtPrecoCompraActionPerformed(evt);
+            }
+        });
+
+        jLabel3.setText("Quantidade");
+
+        txtQuantCompra.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
+        txtQuantCompra.setText("0");
+        txtQuantCompra.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtQuantCompraActionPerformed(evt);
+            }
+        });
+
+        jLabel4.setText("Ordem R$");
+
+        txtOrdemRs.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
+        txtOrdemRs.setText("0,00");
+
+        btnComprar.setText("Prosseguir");
+
+        jLabel5.setText("Oscilação: ");
+
+        jLabel6.setText("Preço atual: ");
+
+        jLabel7.setText("Negocios: ");
+
+        jLabel8.setText("Fator de cotação: ");
+
+        jLabel9.setText("Lote minímo: ");
+
+        lblPrecoAtual.setText("0,00");
+
+        lblOscila.setText("0.00");
+
+        lblNegocio.setText("0");
+
+        lblFatorCot.setText("0");
+
+        jLabel19.setText(")");
+
+        lblValorLot.setText("0,00");
+
+        jLabel21.setText("(");
+
+        lblLoteMin.setText("0");
+
+        javax.swing.GroupLayout jpnCompraLayout = new javax.swing.GroupLayout(jpnCompra);
+        jpnCompra.setLayout(jpnCompraLayout);
+        jpnCompraLayout.setHorizontalGroup(
+            jpnCompraLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jpnCompraLayout.createSequentialGroup()
+                .addGap(18, 18, 18)
+                .addGroup(jpnCompraLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(btnComprar)
+                    .addGroup(jpnCompraLayout.createSequentialGroup()
+                        .addGroup(jpnCompraLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jpnCompraLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jpnCompraLayout.createSequentialGroup()
+                                    .addComponent(jLabel2)
+                                    .addGap(52, 52, 52))
+                                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jpnCompraLayout.createSequentialGroup()
+                                    .addComponent(jLabel3)
+                                    .addGap(39, 39, 39))
+                                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jpnCompraLayout.createSequentialGroup()
+                                    .addComponent(jLabel4)
+                                    .addGap(47, 47, 47)))
+                            .addGroup(jpnCompraLayout.createSequentialGroup()
+                                .addComponent(jLabel1)
+                                .addGap(66, 66, 66)))
+                        .addGroup(jpnCompraLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(listAcao, javax.swing.GroupLayout.DEFAULT_SIZE, 212, Short.MAX_VALUE)
+                            .addComponent(txtPrecoCompra)
+                            .addComponent(txtQuantCompra)
+                            .addComponent(txtOrdemRs))))
+                .addGap(92, 92, 92)
+                .addGroup(jpnCompraLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jpnCompraLayout.createSequentialGroup()
+                        .addComponent(jLabel9)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(lblLoteMin)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel21)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(lblValorLot)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel19))
+                    .addGroup(jpnCompraLayout.createSequentialGroup()
+                        .addComponent(jLabel7)
+                        .addGap(18, 18, 18)
+                        .addComponent(lblNegocio))
+                    .addGroup(jpnCompraLayout.createSequentialGroup()
+                        .addComponent(jLabel5)
+                        .addGap(18, 18, 18)
+                        .addComponent(lblOscila))
+                    .addGroup(jpnCompraLayout.createSequentialGroup()
+                        .addComponent(jLabel6)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(lblPrecoAtual))
+                    .addGroup(jpnCompraLayout.createSequentialGroup()
+                        .addComponent(jLabel8)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(lblFatorCot)))
+                .addContainerGap(77, Short.MAX_VALUE))
         );
-        jPanel2Layout.setVerticalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 510, Short.MAX_VALUE)
+        jpnCompraLayout.setVerticalGroup(
+            jpnCompraLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jpnCompraLayout.createSequentialGroup()
+                .addGap(36, 36, 36)
+                .addGroup(jpnCompraLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(jpnCompraLayout.createSequentialGroup()
+                        .addGroup(jpnCompraLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel6)
+                            .addComponent(lblPrecoAtual))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jpnCompraLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel5)
+                            .addComponent(lblOscila))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jpnCompraLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel7)
+                            .addComponent(lblNegocio))
+                        .addGap(5, 5, 5)
+                        .addGroup(jpnCompraLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel8)
+                            .addComponent(lblFatorCot))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jpnCompraLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel9)
+                            .addComponent(lblLoteMin)
+                            .addComponent(jLabel21)
+                            .addComponent(lblValorLot)
+                            .addComponent(jLabel19)))
+                    .addGroup(jpnCompraLayout.createSequentialGroup()
+                        .addGroup(jpnCompraLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel1)
+                            .addComponent(listAcao, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(17, 17, 17)
+                        .addGroup(jpnCompraLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel2)
+                            .addComponent(txtPrecoCompra, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(25, 25, 25)
+                        .addGroup(jpnCompraLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(txtQuantCompra, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel3))
+                        .addGap(31, 31, 31)
+                        .addGroup(jpnCompraLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jLabel4)
+                            .addComponent(txtOrdemRs, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(70, 70, 70)
+                        .addComponent(btnComprar)))
+                .addContainerGap(41, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jpnCompra, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGap(18, 18, 18))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jpnCompra, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    private void txtPrecoCompraActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtPrecoCompraActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtPrecoCompraActionPerformed
+
+    private void txtQuantCompraActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtQuantCompraActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtQuantCompraActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JPanel jPanel2;
+    private javax.swing.JButton btnComprar;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel19;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel21;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
+    private javax.swing.JPanel jpnCompra;
+    private javax.swing.JLabel lblFatorCot;
+    private javax.swing.JLabel lblLoteMin;
+    private javax.swing.JLabel lblNegocio;
+    private javax.swing.JLabel lblOscila;
+    private javax.swing.JLabel lblPrecoAtual;
+    private javax.swing.JLabel lblValorLot;
+    private java.awt.Choice listAcao;
+    private javax.swing.JTextField txtOrdemRs;
+    private javax.swing.JTextField txtPrecoCompra;
+    private javax.swing.JTextField txtQuantCompra;
     // End of variables declaration//GEN-END:variables
 }

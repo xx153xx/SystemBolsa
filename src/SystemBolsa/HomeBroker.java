@@ -27,19 +27,20 @@ public class HomeBroker extends javax.swing.JInternalFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jpnBroker = new javax.swing.JPanel();
+        jpnBroker = new javax.swing.JDesktopPane();
         menuBroker = new javax.swing.JMenuBar();
-        menuComprar = new javax.swing.JMenu();
-        menuComprar02 = new javax.swing.JMenuItem();
+        menu3 = new javax.swing.JMenu();
+        menuComprar = new javax.swing.JMenuItem();
         menuVender = new javax.swing.JMenu();
         menuVender02 = new javax.swing.JMenuItem();
+        jMenu1 = new javax.swing.JMenu();
+        menuBook = new javax.swing.JMenuItem();
 
         setClosable(true);
+        setIconifiable(true);
         setMaximizable(true);
         setResizable(true);
         setTitle("Home Broker");
-
-        jpnBroker.setBackground(new java.awt.Color(255, 255, 255));
 
         javax.swing.GroupLayout jpnBrokerLayout = new javax.swing.GroupLayout(jpnBroker);
         jpnBroker.setLayout(jpnBrokerLayout);
@@ -49,20 +50,20 @@ public class HomeBroker extends javax.swing.JInternalFrame {
         );
         jpnBrokerLayout.setVerticalGroup(
             jpnBrokerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 297, Short.MAX_VALUE)
+            .addGap(0, 323, Short.MAX_VALUE)
         );
 
-        menuComprar.setText("Comprar");
+        menu3.setText("Comprar");
 
-        menuComprar02.setText("Comprar");
-        menuComprar02.addActionListener(new java.awt.event.ActionListener() {
+        menuComprar.setText("Comprar");
+        menuComprar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                menuComprar02ActionPerformed(evt);
+                menuComprarActionPerformed(evt);
             }
         });
-        menuComprar.add(menuComprar02);
+        menu3.add(menuComprar);
 
-        menuBroker.add(menuComprar);
+        menuBroker.add(menu3);
 
         menuVender.setText("Vender");
 
@@ -76,27 +77,39 @@ public class HomeBroker extends javax.swing.JInternalFrame {
 
         menuBroker.add(menuVender);
 
+        jMenu1.setText("Book de Ofertas");
+
+        menuBook.setText("Book de Ofertas");
+        menuBook.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                menuBookActionPerformed(evt);
+            }
+        });
+        jMenu1.add(menuBook);
+
+        menuBroker.add(jMenu1);
+
         setJMenuBar(menuBroker);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jpnBroker, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jpnBroker, javax.swing.GroupLayout.Alignment.TRAILING)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jpnBroker, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jpnBroker, javax.swing.GroupLayout.Alignment.TRAILING)
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void menuComprar02ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuComprar02ActionPerformed
+    private void menuComprarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuComprarActionPerformed
        Comprar ob = new Comprar();
         jpnBroker.add(ob);
         ob.setVisible(true);
-    }//GEN-LAST:event_menuComprar02ActionPerformed
+    }//GEN-LAST:event_menuComprarActionPerformed
 
     private void menuVender02ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuVender02ActionPerformed
        Vender ob = new Vender();
@@ -104,12 +117,20 @@ public class HomeBroker extends javax.swing.JInternalFrame {
         ob.setVisible(true);
     }//GEN-LAST:event_menuVender02ActionPerformed
 
+    private void menuBookActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuBookActionPerformed
+        BookOfertas ob = new  BookOfertas();
+        jpnBroker.add(ob);
+        ob.setVisible(true);
+    }//GEN-LAST:event_menuBookActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JPanel jpnBroker;
+    private javax.swing.JMenu jMenu1;
+    private javax.swing.JDesktopPane jpnBroker;
+    private javax.swing.JMenu menu3;
+    private javax.swing.JMenuItem menuBook;
     private javax.swing.JMenuBar menuBroker;
-    private javax.swing.JMenu menuComprar;
-    private javax.swing.JMenuItem menuComprar02;
+    private javax.swing.JMenuItem menuComprar;
     private javax.swing.JMenu menuVender;
     private javax.swing.JMenuItem menuVender02;
     // End of variables declaration//GEN-END:variables
