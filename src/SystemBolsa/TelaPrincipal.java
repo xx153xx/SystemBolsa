@@ -38,6 +38,7 @@ public class TelaPrincipal extends javax.swing.JFrame {
         tbCarteira02 = new javax.swing.JTable();
         jScrollPane3 = new javax.swing.JScrollPane();
         tbCarteira03 = new javax.swing.JTable();
+        jLabel26 = new javax.swing.JLabel();
         jpnHistorico = new javax.swing.JDesktopPane();
         jScrollPane4 = new javax.swing.JScrollPane();
         tbHistorico = new javax.swing.JTable();
@@ -207,9 +208,14 @@ public class TelaPrincipal extends javax.swing.JFrame {
         });
         jScrollPane3.setViewportView(tbCarteira03);
 
+        jLabel26.setFont(new java.awt.Font("Arial Black", 2, 24)); // NOI18N
+        jLabel26.setForeground(new java.awt.Color(153, 0, 0));
+        jLabel26.setText("Carteira de ações");
+
         jpnCarteira.setLayer(jScrollPane2, javax.swing.JLayeredPane.DEFAULT_LAYER);
         jpnCarteira.setLayer(jScrollPane1, javax.swing.JLayeredPane.DEFAULT_LAYER);
         jpnCarteira.setLayer(jScrollPane3, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jpnCarteira.setLayer(jLabel26, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         javax.swing.GroupLayout jpnCarteiraLayout = new javax.swing.GroupLayout(jpnCarteira);
         jpnCarteira.setLayout(jpnCarteiraLayout);
@@ -218,11 +224,17 @@ public class TelaPrincipal extends javax.swing.JFrame {
             .addComponent(jScrollPane2)
             .addComponent(jScrollPane3)
             .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 1209, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jpnCarteiraLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel26)
+                .addGap(472, 472, 472))
         );
         jpnCarteiraLayout.setVerticalGroup(
             jpnCarteiraLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jpnCarteiraLayout.createSequentialGroup()
-                .addContainerGap(136, Short.MAX_VALUE)
+                .addGap(45, 45, 45)
+                .addComponent(jLabel26)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 56, Short.MAX_VALUE)
                 .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(132, 132, 132)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -954,6 +966,7 @@ public class TelaPrincipal extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel23;
     private javax.swing.JLabel jLabel24;
     private javax.swing.JLabel jLabel25;
+    private javax.swing.JLabel jLabel26;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
