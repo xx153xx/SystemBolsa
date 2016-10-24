@@ -8,6 +8,7 @@ package SystemBolsa;
 import java.awt.CardLayout;
 import java.awt.event.KeyEvent;
 import javax.swing.JOptionPane;
+import javax.swing.table.DefaultTableModel;
 
 /**
  *
@@ -46,15 +47,22 @@ public class TelaLogin extends javax.swing.JFrame {
         jLabel5 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
         txtNomeCadastro = new javax.swing.JTextField();
-        txtUsuarioCadastro = new javax.swing.JTextField();
         txtSenhaCadastro = new javax.swing.JPasswordField();
         txtSenha2Cadastro = new javax.swing.JPasswordField();
         jLabel9 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
         btnCadastrar = new javax.swing.JButton();
-        jFormattedTextField1 = new javax.swing.JFormattedTextField();
-        jComboBox1 = new javax.swing.JComboBox<>();
+        txtCpfCadastro = new javax.swing.JFormattedTextField();
+        jButton3 = new javax.swing.JButton();
+        jLabel12 = new javax.swing.JLabel();
+        txtPlanoCadastro = new javax.swing.JFormattedTextField();
+        txtUsuarioCadastro = new javax.swing.JTextField();
+        jpnLista = new javax.swing.JDesktopPane();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        tbCadastro = new javax.swing.JTable();
+        jButton1 = new javax.swing.JButton();
+        jButton4 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("SystemBolsa");
@@ -193,27 +201,46 @@ public class TelaLogin extends javax.swing.JFrame {
         });
 
         try {
-            jFormattedTextField1.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("###.###.###-##")));
+            txtCpfCadastro.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("###.###.###-##")));
         } catch (java.text.ParseException ex) {
             ex.printStackTrace();
         }
 
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Selecionar", "1500,00", "3000,00", "5000,00" }));
+        jButton3.setText("Lista");
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
+
+        jLabel12.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel12.setFont(new java.awt.Font("Arial Black", 3, 10)); // NOI18N
+        jLabel12.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel12.setText("(1500,3000,5000)");
+
+        try {
+            txtPlanoCadastro.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("####,##")));
+        } catch (java.text.ParseException ex) {
+            ex.printStackTrace();
+        }
+        txtPlanoCadastro.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
 
         jpnCadastro.setLayer(jLabel4, javax.swing.JLayeredPane.DEFAULT_LAYER);
         jpnCadastro.setLayer(jLabel6, javax.swing.JLayeredPane.DEFAULT_LAYER);
         jpnCadastro.setLayer(jLabel5, javax.swing.JLayeredPane.DEFAULT_LAYER);
         jpnCadastro.setLayer(jLabel10, javax.swing.JLayeredPane.DEFAULT_LAYER);
         jpnCadastro.setLayer(txtNomeCadastro, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jpnCadastro.setLayer(txtUsuarioCadastro, javax.swing.JLayeredPane.DEFAULT_LAYER);
         jpnCadastro.setLayer(txtSenhaCadastro, javax.swing.JLayeredPane.DEFAULT_LAYER);
         jpnCadastro.setLayer(txtSenha2Cadastro, javax.swing.JLayeredPane.DEFAULT_LAYER);
         jpnCadastro.setLayer(jLabel9, javax.swing.JLayeredPane.DEFAULT_LAYER);
         jpnCadastro.setLayer(jLabel8, javax.swing.JLayeredPane.DEFAULT_LAYER);
         jpnCadastro.setLayer(jLabel7, javax.swing.JLayeredPane.DEFAULT_LAYER);
         jpnCadastro.setLayer(btnCadastrar, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jpnCadastro.setLayer(jFormattedTextField1, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jpnCadastro.setLayer(jComboBox1, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jpnCadastro.setLayer(txtCpfCadastro, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jpnCadastro.setLayer(jButton3, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jpnCadastro.setLayer(jLabel12, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jpnCadastro.setLayer(txtPlanoCadastro, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jpnCadastro.setLayer(txtUsuarioCadastro, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         javax.swing.GroupLayout jpnCadastroLayout = new javax.swing.GroupLayout(jpnCadastro);
         jpnCadastro.setLayout(jpnCadastroLayout);
@@ -223,30 +250,39 @@ public class TelaLogin extends javax.swing.JFrame {
                 .addGap(412, 412, 412)
                 .addGroup(jpnCadastroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel4)
-                    .addGroup(jpnCadastroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                        .addComponent(btnCadastrar)
-                        .addGroup(jpnCadastroLayout.createSequentialGroup()
-                            .addGroup(jpnCadastroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                .addComponent(jLabel9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 124, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addGroup(jpnCadastroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                .addComponent(txtSenhaCadastro)
-                                .addComponent(txtUsuarioCadastro)
-                                .addComponent(txtSenha2Cadastro, javax.swing.GroupLayout.PREFERRED_SIZE, 203, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jpnCadastroLayout.createSequentialGroup()
-                            .addGroup(jpnCadastroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jpnCadastroLayout.createSequentialGroup()
+                        .addGroup(jpnCadastroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(jpnCadastroLayout.createSequentialGroup()
                                 .addGroup(jpnCadastroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(jLabel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGap(41, 41, 41)
+                                    .addComponent(jLabel9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 124, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGroup(jpnCadastroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addGroup(jpnCadastroLayout.createSequentialGroup()
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addGroup(jpnCadastroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                            .addComponent(txtSenhaCadastro)
+                                            .addComponent(txtSenha2Cadastro, javax.swing.GroupLayout.DEFAULT_SIZE, 203, Short.MAX_VALUE)))
+                                    .addGroup(jpnCadastroLayout.createSequentialGroup()
+                                        .addGap(4, 4, 4)
+                                        .addComponent(txtUsuarioCadastro))))
+                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jpnCadastroLayout.createSequentialGroup()
+                                .addGroup(jpnCadastroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(jpnCadastroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                        .addComponent(jLabel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(41, 41, 41)
+                                .addGroup(jpnCadastroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(txtNomeCadastro)
+                                    .addComponent(txtCpfCadastro, javax.swing.GroupLayout.DEFAULT_SIZE, 203, Short.MAX_VALUE)
+                                    .addComponent(txtPlanoCadastro)))
                             .addGroup(jpnCadastroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                .addComponent(txtNomeCadastro)
-                                .addComponent(jFormattedTextField1)
-                                .addComponent(jComboBox1, 0, 203, Short.MAX_VALUE)))))
-                .addContainerGap(417, Short.MAX_VALUE))
+                                .addComponent(jButton3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(btnCadastrar, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jLabel12)))
+                .addContainerGap(349, Short.MAX_VALUE))
         );
         jpnCadastroLayout.setVerticalGroup(
             jpnCadastroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -260,11 +296,12 @@ public class TelaLogin extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addGroup(jpnCadastroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel6)
-                    .addComponent(jFormattedTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txtCpfCadastro, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(20, 20, 20)
                 .addGroup(jpnCadastroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel10)
-                    .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabel12)
+                    .addComponent(txtPlanoCadastro, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(jpnCadastroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel7)
@@ -279,10 +316,75 @@ public class TelaLogin extends javax.swing.JFrame {
                     .addComponent(txtSenha2Cadastro, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addComponent(btnCadastrar)
-                .addGap(266, 266, 266))
+                .addGap(18, 18, 18)
+                .addComponent(jButton3)
+                .addGap(223, 223, 223))
         );
 
         jpnPrincipal.add(jpnCadastro, "jpnCadastro");
+
+        jpnLista.setBackground(new java.awt.Color(255, 255, 0));
+
+        tbCadastro.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+
+            },
+            new String [] {
+                "NOME", "CPF", "PLANO R$", "USUÁRIO", "SENHA"
+            }
+        ));
+        tbCadastro.getTableHeader().setReorderingAllowed(false);
+        jScrollPane1.setViewportView(tbCadastro);
+        if (tbCadastro.getColumnModel().getColumnCount() > 0) {
+            tbCadastro.getColumnModel().getColumn(0).setResizable(false);
+            tbCadastro.getColumnModel().getColumn(1).setResizable(false);
+            tbCadastro.getColumnModel().getColumn(2).setResizable(false);
+            tbCadastro.getColumnModel().getColumn(3).setResizable(false);
+            tbCadastro.getColumnModel().getColumn(4).setResizable(false);
+        }
+
+        jButton1.setText("Voltar");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+
+        jButton4.setText("Tela Login");
+        jButton4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton4ActionPerformed(evt);
+            }
+        });
+
+        jpnLista.setLayer(jScrollPane1, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jpnLista.setLayer(jButton1, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jpnLista.setLayer(jButton4, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        javax.swing.GroupLayout jpnListaLayout = new javax.swing.GroupLayout(jpnLista);
+        jpnLista.setLayout(jpnListaLayout);
+        jpnListaLayout.setHorizontalGroup(
+            jpnListaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 1218, Short.MAX_VALUE)
+            .addGroup(jpnListaLayout.createSequentialGroup()
+                .addComponent(jButton1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jButton4)
+                .addGap(0, 0, Short.MAX_VALUE))
+        );
+        jpnListaLayout.setVerticalGroup(
+            jpnListaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jpnListaLayout.createSequentialGroup()
+                .addGap(37, 37, 37)
+                .addGroup(jpnListaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jButton1)
+                    .addComponent(jButton4))
+                .addGap(18, 18, 18)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 246, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(316, Short.MAX_VALUE))
+        );
+
+        jpnPrincipal.add(jpnLista, "jpnLista");
 
         getContentPane().add(jpnPrincipal, java.awt.BorderLayout.CENTER);
 
@@ -320,7 +422,9 @@ public class TelaLogin extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void btnCadastrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCadastrarActionPerformed
-
+        DefaultTableModel jTbCadastro = (DefaultTableModel) tbCadastro.getModel();
+        Object[] dados= {txtNomeCadastro.getText(),txtCpfCadastro.getText(), txtPlanoCadastro.getText(),txtUsuarioCadastro.getText(),new String(txtSenhaCadastro.getPassword()).trim() };
+        jTbCadastro.addRow(dados);
         JOptionPane.showMessageDialog(null, "Cadastro Efetuado com sucesso!");
         CardLayout cl = (CardLayout) jpnPrincipal.getLayout();
         cl.show(jpnPrincipal, "jpnLogin");
@@ -334,6 +438,25 @@ public class TelaLogin extends javax.swing.JFrame {
         
         }
     }//GEN-LAST:event_btnLoginKeyPressed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        CardLayout cl = (CardLayout) jpnPrincipal.getLayout();
+        cl.show(jpnPrincipal, "jpnCadastro");
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+        DefaultTableModel jTbCadastro = (DefaultTableModel) tbCadastro.getModel();
+        Object[] dados= {txtNomeCadastro.getText(),txtCpfCadastro.getText(), txtPlanoCadastro.getText(),txtUsuarioCadastro.getText(),new String(txtSenhaCadastro.getPassword()).trim() };
+        jTbCadastro.addRow(dados);
+        CardLayout cl = (CardLayout) jpnPrincipal.getLayout();
+        cl.show(jpnPrincipal, "jpnLista");
+        
+    }//GEN-LAST:event_jButton3ActionPerformed
+
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+        CardLayout cl = (CardLayout) jpnPrincipal.getLayout();
+        cl.show(jpnPrincipal, "jpnLogin");
+    }//GEN-LAST:event_jButton4ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -374,11 +497,13 @@ public class TelaLogin extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnCadastrar;
     private javax.swing.JButton btnLogin;
+    private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
-    private javax.swing.JComboBox<String> jComboBox1;
-    private javax.swing.JFormattedTextField jFormattedTextField1;
+    private javax.swing.JButton jButton3;
+    private javax.swing.JButton jButton4;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
@@ -387,11 +512,16 @@ public class TelaLogin extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
+    private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JDesktopPane jpnCadastro;
+    private javax.swing.JDesktopPane jpnLista;
     private javax.swing.JDesktopPane jpnLogin;
     private javax.swing.JDesktopPane jpnPrincipal;
+    private javax.swing.JTable tbCadastro;
+    private javax.swing.JFormattedTextField txtCpfCadastro;
     private javax.swing.JTextField txtLogin;
     private javax.swing.JTextField txtNomeCadastro;
+    private javax.swing.JFormattedTextField txtPlanoCadastro;
     private javax.swing.JPasswordField txtSenha;
     private javax.swing.JPasswordField txtSenha2Cadastro;
     private javax.swing.JPasswordField txtSenhaCadastro;
