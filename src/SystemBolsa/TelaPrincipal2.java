@@ -114,6 +114,8 @@ public class TelaPrincipal2 extends javax.swing.JInternalFrame {
         menuVender02 = new javax.swing.JMenuItem();
         menuBook = new javax.swing.JMenuItem();
         menuComprar = new javax.swing.JMenuItem();
+        jMenu1 = new javax.swing.JMenu();
+        menuSair = new javax.swing.JMenuItem();
 
         setBorder(null);
         setClosable(true);
@@ -214,11 +216,6 @@ public class TelaPrincipal2 extends javax.swing.JInternalFrame {
         jLabel26.setForeground(new java.awt.Color(153, 0, 0));
         jLabel26.setText("Carteira de ações");
 
-        jpnCarteira.setLayer(jScrollPane2, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jpnCarteira.setLayer(jScrollPane1, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jpnCarteira.setLayer(jScrollPane3, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jpnCarteira.setLayer(jLabel26, javax.swing.JLayeredPane.DEFAULT_LAYER);
-
         javax.swing.GroupLayout jpnCarteiraLayout = new javax.swing.GroupLayout(jpnCarteira);
         jpnCarteira.setLayout(jpnCarteiraLayout);
         jpnCarteiraLayout.setHorizontalGroup(
@@ -244,6 +241,10 @@ public class TelaPrincipal2 extends javax.swing.JInternalFrame {
                 .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(165, 165, 165))
         );
+        jpnCarteira.setLayer(jScrollPane2, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jpnCarteira.setLayer(jScrollPane1, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jpnCarteira.setLayer(jScrollPane3, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jpnCarteira.setLayer(jLabel26, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         jpnPrincipal.add(jpnCarteira, "jpnCarteira");
 
@@ -269,8 +270,6 @@ public class TelaPrincipal2 extends javax.swing.JInternalFrame {
         tbHistorico.getTableHeader().setReorderingAllowed(false);
         jScrollPane4.setViewportView(tbHistorico);
 
-        jpnHistorico.setLayer(jScrollPane4, javax.swing.JLayeredPane.DEFAULT_LAYER);
-
         javax.swing.GroupLayout jpnHistoricoLayout = new javax.swing.GroupLayout(jpnHistorico);
         jpnHistorico.setLayout(jpnHistoricoLayout);
         jpnHistoricoLayout.setHorizontalGroup(
@@ -284,6 +283,7 @@ public class TelaPrincipal2 extends javax.swing.JInternalFrame {
                 .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(506, Short.MAX_VALUE))
         );
+        jpnHistorico.setLayer(jScrollPane4, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         jpnPrincipal.add(jpnHistorico, "jpnHistorico");
 
@@ -312,8 +312,6 @@ public class TelaPrincipal2 extends javax.swing.JInternalFrame {
         jTable1.getTableHeader().setReorderingAllowed(false);
         jScrollPane5.setViewportView(jTable1);
 
-        jpnCotacao.setLayer(jScrollPane5, javax.swing.JLayeredPane.DEFAULT_LAYER);
-
         javax.swing.GroupLayout jpnCotacaoLayout = new javax.swing.GroupLayout(jpnCotacao);
         jpnCotacao.setLayout(jpnCotacaoLayout);
         jpnCotacaoLayout.setHorizontalGroup(
@@ -327,6 +325,7 @@ public class TelaPrincipal2 extends javax.swing.JInternalFrame {
                 .addComponent(jScrollPane5, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(515, Short.MAX_VALUE))
         );
+        jpnCotacao.setLayer(jScrollPane5, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         jpnPrincipal.add(jpnCotacao, "jpnCotacao");
 
@@ -388,30 +387,6 @@ public class TelaPrincipal2 extends javax.swing.JInternalFrame {
         btnComprar.setText("Prosseguir");
 
         btnAcaoCompra.setText("ox");
-
-        jpnCompra.setLayer(txtPrecoCompra, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jpnCompra.setLayer(jLabel1, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jpnCompra.setLayer(jLabel2, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jpnCompra.setLayer(jLabel3, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jpnCompra.setLayer(txtQuantCompra, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jpnCompra.setLayer(txtOrdemRs, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jpnCompra.setLayer(jLabel4, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jpnCompra.setLayer(jLabel6, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jpnCompra.setLayer(lblPrecoAtual, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jpnCompra.setLayer(lblOscila, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jpnCompra.setLayer(jLabel5, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jpnCompra.setLayer(jLabel7, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jpnCompra.setLayer(lblNegocio, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jpnCompra.setLayer(jLabel8, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jpnCompra.setLayer(lblFatorCot, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jpnCompra.setLayer(jLabel9, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jpnCompra.setLayer(lblLoteMin, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jpnCompra.setLayer(jLabel21, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jpnCompra.setLayer(lblValorLot, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jpnCompra.setLayer(jLabel19, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jpnCompra.setLayer(btnComprar, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jpnCompra.setLayer(txtAcaoCompra, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jpnCompra.setLayer(btnAcaoCompra, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         javax.swing.GroupLayout jpnCompraLayout = new javax.swing.GroupLayout(jpnCompra);
         jpnCompra.setLayout(jpnCompraLayout);
@@ -524,6 +499,29 @@ public class TelaPrincipal2 extends javax.swing.JInternalFrame {
                         .addComponent(btnComprar)))
                 .addContainerGap(351, Short.MAX_VALUE))
         );
+        jpnCompra.setLayer(txtPrecoCompra, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jpnCompra.setLayer(jLabel1, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jpnCompra.setLayer(jLabel2, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jpnCompra.setLayer(jLabel3, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jpnCompra.setLayer(txtQuantCompra, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jpnCompra.setLayer(txtOrdemRs, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jpnCompra.setLayer(jLabel4, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jpnCompra.setLayer(jLabel6, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jpnCompra.setLayer(lblPrecoAtual, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jpnCompra.setLayer(lblOscila, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jpnCompra.setLayer(jLabel5, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jpnCompra.setLayer(jLabel7, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jpnCompra.setLayer(lblNegocio, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jpnCompra.setLayer(jLabel8, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jpnCompra.setLayer(lblFatorCot, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jpnCompra.setLayer(jLabel9, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jpnCompra.setLayer(lblLoteMin, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jpnCompra.setLayer(jLabel21, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jpnCompra.setLayer(lblValorLot, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jpnCompra.setLayer(jLabel19, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jpnCompra.setLayer(btnComprar, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jpnCompra.setLayer(txtAcaoCompra, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jpnCompra.setLayer(btnAcaoCompra, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         jpnPrincipal.add(jpnCompra, "jpnCompra");
 
@@ -540,10 +538,6 @@ public class TelaPrincipal2 extends javax.swing.JInternalFrame {
             }
         ));
         jScrollPane6.setViewportView(tbBook);
-
-        jpnBook.setLayer(btnPesquisa, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jpnBook.setLayer(txtPesquisa, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jpnBook.setLayer(jScrollPane6, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         javax.swing.GroupLayout jpnBookLayout = new javax.swing.GroupLayout(jpnBook);
         jpnBook.setLayout(jpnBookLayout);
@@ -569,6 +563,9 @@ public class TelaPrincipal2 extends javax.swing.JInternalFrame {
                 .addComponent(jScrollPane6, javax.swing.GroupLayout.PREFERRED_SIZE, 179, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(391, Short.MAX_VALUE))
         );
+        jpnBook.setLayer(btnPesquisa, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jpnBook.setLayer(txtPesquisa, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jpnBook.setLayer(jScrollPane6, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         jpnPrincipal.add(jpnBook, "jpnBook");
 
@@ -640,35 +637,6 @@ public class TelaPrincipal2 extends javax.swing.JInternalFrame {
         jLabel10.setText("Ações");
 
         btnAcaoVenda.setText("ok");
-
-        jpnVenda.setLayer(jLabel17, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jpnVenda.setLayer(jLabel15, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jpnVenda.setLayer(lblNegocioVd, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jpnVenda.setLayer(lblPrecoAtualVd, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jpnVenda.setLayer(jLabel16, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jpnVenda.setLayer(lblLucro, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jpnVenda.setLayer(jLabel18, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jpnVenda.setLayer(jLabel14, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jpnVenda.setLayer(lblFatorCotVd, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jpnVenda.setLayer(lblValorLoteVd, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jpnVenda.setLayer(jLabel20, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jpnVenda.setLayer(jLabel22, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jpnVenda.setLayer(jLabel23, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jpnVenda.setLayer(ldlLoteMinVd, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jpnVenda.setLayer(jLabel24, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jpnVenda.setLayer(lblCarteira, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jpnVenda.setLayer(lblPrecoCompra, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jpnVenda.setLayer(jLabel25, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jpnVenda.setLayer(btnVenda, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jpnVenda.setLayer(txtOrdemVd, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jpnVenda.setLayer(txtQuantAcaoVd, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jpnVenda.setLayer(txtPrecoVd, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jpnVenda.setLayer(jLabel13, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jpnVenda.setLayer(jLabel12, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jpnVenda.setLayer(jLabel11, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jpnVenda.setLayer(jLabel10, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jpnVenda.setLayer(txtAcaoVenda, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jpnVenda.setLayer(btnAcaoVenda, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         javax.swing.GroupLayout jpnVendaLayout = new javax.swing.GroupLayout(jpnVenda);
         jpnVenda.setLayout(jpnVendaLayout);
@@ -786,7 +754,6 @@ public class TelaPrincipal2 extends javax.swing.JInternalFrame {
                                 .addComponent(jLabel11)
                                 .addGap(25, 25, 25))
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jpnVendaLayout.createSequentialGroup()
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(txtPrecoVd, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(18, 18, 18)))
                         .addGroup(jpnVendaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
@@ -808,6 +775,34 @@ public class TelaPrincipal2 extends javax.swing.JInternalFrame {
                     .addComponent(lblPrecoCompra))
                 .addContainerGap(349, Short.MAX_VALUE))
         );
+        jpnVenda.setLayer(jLabel17, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jpnVenda.setLayer(jLabel15, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jpnVenda.setLayer(lblNegocioVd, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jpnVenda.setLayer(lblPrecoAtualVd, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jpnVenda.setLayer(jLabel16, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jpnVenda.setLayer(lblLucro, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jpnVenda.setLayer(jLabel18, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jpnVenda.setLayer(jLabel14, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jpnVenda.setLayer(lblFatorCotVd, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jpnVenda.setLayer(lblValorLoteVd, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jpnVenda.setLayer(jLabel20, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jpnVenda.setLayer(jLabel22, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jpnVenda.setLayer(jLabel23, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jpnVenda.setLayer(ldlLoteMinVd, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jpnVenda.setLayer(jLabel24, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jpnVenda.setLayer(lblCarteira, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jpnVenda.setLayer(lblPrecoCompra, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jpnVenda.setLayer(jLabel25, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jpnVenda.setLayer(btnVenda, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jpnVenda.setLayer(txtOrdemVd, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jpnVenda.setLayer(txtQuantAcaoVd, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jpnVenda.setLayer(txtPrecoVd, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jpnVenda.setLayer(jLabel13, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jpnVenda.setLayer(jLabel12, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jpnVenda.setLayer(jLabel11, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jpnVenda.setLayer(jLabel10, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jpnVenda.setLayer(txtAcaoVenda, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jpnVenda.setLayer(btnAcaoVenda, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         jpnPrincipal.add(jpnVenda, "jpnVenda");
 
@@ -879,6 +874,18 @@ public class TelaPrincipal2 extends javax.swing.JInternalFrame {
         menuHomeBroker.add(menuComprar);
 
         jMenuBar1.add(menuHomeBroker);
+
+        jMenu1.setText("Sair");
+
+        menuSair.setText("Sair");
+        menuSair.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                menuSairActionPerformed(evt);
+            }
+        });
+        jMenu1.add(menuSair);
+
+        jMenuBar1.add(jMenu1);
 
         setJMenuBar(jMenuBar1);
 
@@ -952,6 +959,11 @@ public class TelaPrincipal2 extends javax.swing.JInternalFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_txtPrecoVdActionPerformed
 
+    private void menuSairActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuSairActionPerformed
+      
+        
+    }//GEN-LAST:event_menuSairActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnAcaoCompra;
@@ -985,6 +997,7 @@ public class TelaPrincipal2 extends javax.swing.JInternalFrame {
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
+    private javax.swing.JMenu jMenu1;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
@@ -1024,6 +1037,7 @@ public class TelaPrincipal2 extends javax.swing.JInternalFrame {
     private javax.swing.JMenu menuHistorico;
     private javax.swing.JMenuItem menuHistorico2;
     private javax.swing.JMenu menuHomeBroker;
+    private javax.swing.JMenuItem menuSair;
     private javax.swing.JMenuItem menuVender02;
     private javax.swing.JTable tbBook;
     private javax.swing.JTable tbCarteira01;
