@@ -9,48 +9,25 @@
             <Property name="text" type="java.lang.String" value="Carteira"/>
           </Properties>
           <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="menuCarteiraMouseClicked"/>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="menuCarteiraActionPerformed"/>
           </Events>
-          <SubComponents>
-            <MenuItem class="javax.swing.JMenuItem" name="menuCarteira2">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="Carteira"/>
-              </Properties>
-              <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="menuCarteira2ActionPerformed"/>
-              </Events>
-            </MenuItem>
-          </SubComponents>
         </Menu>
         <Menu class="javax.swing.JMenu" name="menuHistorico">
           <Properties>
             <Property name="text" type="java.lang.String" value="Hist&#xf3;rico"/>
           </Properties>
-          <SubComponents>
-            <MenuItem class="javax.swing.JMenuItem" name="menuHistorico2">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="Hist&#xf3;rico"/>
-              </Properties>
-              <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="menuHistorico2ActionPerformed"/>
-              </Events>
-            </MenuItem>
-          </SubComponents>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="menuHistoricoMouseClicked"/>
+          </Events>
         </Menu>
         <Menu class="javax.swing.JMenu" name="menuCotacao">
           <Properties>
             <Property name="text" type="java.lang.String" value="Cota&#xe7;&#xf5;es"/>
           </Properties>
-          <SubComponents>
-            <MenuItem class="javax.swing.JMenuItem" name="menuEmpresa2">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="Cota&#xe7;&#xf5;es"/>
-              </Properties>
-              <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="menuEmpresa2ActionPerformed"/>
-              </Events>
-            </MenuItem>
-          </SubComponents>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="menuCotacaoMouseClicked"/>
+          </Events>
         </Menu>
         <Menu class="javax.swing.JMenu" name="menuHomeBroker">
           <Properties>
@@ -211,10 +188,10 @@
                       <EmptySpace min="-2" pref="45" max="-2" attributes="0"/>
                       <Component id="jLabel26" min="-2" max="-2" attributes="0"/>
                       <EmptySpace pref="56" max="32767" attributes="0"/>
-                      <Component id="jScrollPane2" min="-2" pref="24" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="132" max="-2" attributes="0"/>
+                      <Component id="jScrollPane2" min="-2" pref="177" max="-2" attributes="0"/>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
                       <Component id="jScrollPane1" min="-2" pref="46" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="87" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="55" max="-2" attributes="0"/>
                       <Component id="jScrollPane3" min="-2" pref="43" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="165" max="-2" attributes="0"/>
                   </Group>
@@ -236,21 +213,65 @@
                     </Property>
                     <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
                       <Table columnCount="8" rowCount="0">
-                        <Column editable="true" title="Ativo" type="java.lang.String"/>
-                        <Column editable="true" title="Quantidade" type="java.lang.Integer"/>
-                        <Column editable="false" title="Valor compra" type="java.lang.Float"/>
-                        <Column editable="false" title="Valor atual" type="java.lang.Float"/>
-                        <Column editable="false" title="Total Compra" type="java.lang.Float"/>
-                        <Column editable="false" title="Total Atual" type="java.lang.Float"/>
-                        <Column editable="false" title="Lucro/Prejuizo" type="java.lang.Float"/>
-                        <Column editable="false" title="%" type="java.lang.Float"/>
+                        <Column editable="false" title="Ativo" type="java.lang.Object"/>
+                        <Column editable="false" title="Quantidade" type="java.lang.Object"/>
+                        <Column editable="false" title="Valor compra" type="java.lang.Object"/>
+                        <Column editable="false" title="Valor atual" type="java.lang.Object"/>
+                        <Column editable="false" title="Total Compra" type="java.lang.Object"/>
+                        <Column editable="false" title="Total Atual" type="java.lang.Object"/>
+                        <Column editable="false" title="Lucro/Prejuizo" type="java.lang.Object"/>
+                        <Column editable="false" title="%" type="java.lang.Object"/>
                       </Table>
+                    </Property>
+                    <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">
+                      <TableColumnModel selectionModel="0">
+                        <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="false">
+                          <Title/>
+                          <Editor/>
+                          <Renderer/>
+                        </Column>
+                        <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="false">
+                          <Title/>
+                          <Editor/>
+                          <Renderer/>
+                        </Column>
+                        <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="false">
+                          <Title/>
+                          <Editor/>
+                          <Renderer/>
+                        </Column>
+                        <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="false">
+                          <Title/>
+                          <Editor/>
+                          <Renderer/>
+                        </Column>
+                        <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="false">
+                          <Title/>
+                          <Editor/>
+                          <Renderer/>
+                        </Column>
+                        <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="false">
+                          <Title/>
+                          <Editor/>
+                          <Renderer/>
+                        </Column>
+                        <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="false">
+                          <Title/>
+                          <Editor/>
+                          <Renderer/>
+                        </Column>
+                        <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="false">
+                          <Title/>
+                          <Editor/>
+                          <Renderer/>
+                        </Column>
+                      </TableColumnModel>
                     </Property>
                     <Property name="gridColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="ff" green="ff" red="ff" type="rgb"/>
                     </Property>
                     <Property name="tableHeader" type="javax.swing.table.JTableHeader" editor="org.netbeans.modules.form.editors2.JTableHeaderEditor">
-                      <TableHeader reorderingAllowed="true" resizingAllowed="true"/>
+                      <TableHeader reorderingAllowed="false" resizingAllowed="true"/>
                     </Property>
                   </Properties>
                 </Component>
@@ -267,20 +288,50 @@
                   <Properties>
                     <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
                       <Table columnCount="6" rowCount="1">
-                        <Column editable="true" title="" type="java.lang.String">
-                          <Data value="TOTAL DE ATIVOS"/>
-                        </Column>
-                        <Column editable="false" title="" type="java.lang.String">
-                          <Data value=" "/>
-                        </Column>
-                        <Column editable="false" title="Total Compra" type="java.lang.Float"/>
-                        <Column editable="false" title="Total Atual" type="java.lang.Float"/>
-                        <Column editable="false" title="Lucro/Prejuizo" type="java.lang.Float"/>
-                        <Column editable="false" title="%" type="java.lang.Float"/>
+                        <Column editable="false" title="" type="java.lang.Object"/>
+                        <Column editable="false" title="" type="java.lang.Object"/>
+                        <Column editable="false" title="Total Compra" type="java.lang.Object"/>
+                        <Column editable="false" title="Total Atual" type="java.lang.Object"/>
+                        <Column editable="false" title="Lucro/Prejuizo" type="java.lang.Object"/>
+                        <Column editable="false" title="%" type="java.lang.Object"/>
                       </Table>
                     </Property>
+                    <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">
+                      <TableColumnModel selectionModel="0">
+                        <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="false">
+                          <Title/>
+                          <Editor/>
+                          <Renderer/>
+                        </Column>
+                        <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="false">
+                          <Title/>
+                          <Editor/>
+                          <Renderer/>
+                        </Column>
+                        <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="false">
+                          <Title/>
+                          <Editor/>
+                          <Renderer/>
+                        </Column>
+                        <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="false">
+                          <Title/>
+                          <Editor/>
+                          <Renderer/>
+                        </Column>
+                        <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="false">
+                          <Title/>
+                          <Editor/>
+                          <Renderer/>
+                        </Column>
+                        <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                          <Title/>
+                          <Editor/>
+                          <Renderer/>
+                        </Column>
+                      </TableColumnModel>
+                    </Property>
                     <Property name="tableHeader" type="javax.swing.table.JTableHeader" editor="org.netbeans.modules.form.editors2.JTableHeaderEditor">
-                      <TableHeader reorderingAllowed="true" resizingAllowed="true"/>
+                      <TableHeader reorderingAllowed="false" resizingAllowed="true"/>
                     </Property>
                   </Properties>
                 </Component>
@@ -307,8 +358,42 @@
                         <Column editable="false" title="%" type="java.lang.Object"/>
                       </Table>
                     </Property>
+                    <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">
+                      <TableColumnModel selectionModel="0">
+                        <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="false">
+                          <Title/>
+                          <Editor/>
+                          <Renderer/>
+                        </Column>
+                        <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="false">
+                          <Title/>
+                          <Editor/>
+                          <Renderer/>
+                        </Column>
+                        <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="false">
+                          <Title/>
+                          <Editor/>
+                          <Renderer/>
+                        </Column>
+                        <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="false">
+                          <Title/>
+                          <Editor/>
+                          <Renderer/>
+                        </Column>
+                        <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="false">
+                          <Title/>
+                          <Editor/>
+                          <Renderer/>
+                        </Column>
+                        <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="false">
+                          <Title/>
+                          <Editor/>
+                          <Renderer/>
+                        </Column>
+                      </TableColumnModel>
+                    </Property>
                     <Property name="tableHeader" type="javax.swing.table.JTableHeader" editor="org.netbeans.modules.form.editors2.JTableHeaderEditor">
-                      <TableHeader reorderingAllowed="true" resizingAllowed="true"/>
+                      <TableHeader reorderingAllowed="false" resizingAllowed="true"/>
                     </Property>
                   </Properties>
                 </Component>
@@ -349,8 +434,8 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="101" max="-2" attributes="0"/>
-                      <Component id="jScrollPane4" min="-2" pref="26" max="-2" attributes="0"/>
-                      <EmptySpace pref="506" max="32767" attributes="0"/>
+                      <Component id="jScrollPane4" min="-2" pref="444" max="-2" attributes="0"/>
+                      <EmptySpace pref="88" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -372,6 +457,30 @@
                         <Column editable="false" title="Descri&#xe7;&#xe3;o" type="java.lang.Object"/>
                         <Column editable="false" title="Status" type="java.lang.Object"/>
                       </Table>
+                    </Property>
+                    <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">
+                      <TableColumnModel selectionModel="0">
+                        <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="false">
+                          <Title/>
+                          <Editor/>
+                          <Renderer/>
+                        </Column>
+                        <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="false">
+                          <Title/>
+                          <Editor/>
+                          <Renderer/>
+                        </Column>
+                        <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="false">
+                          <Title/>
+                          <Editor/>
+                          <Renderer/>
+                        </Column>
+                        <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="false">
+                          <Title/>
+                          <Editor/>
+                          <Renderer/>
+                        </Column>
+                      </TableColumnModel>
                     </Property>
                     <Property name="gridColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -407,8 +516,8 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="90" max="-2" attributes="0"/>
-                      <Component id="jScrollPane5" min="-2" pref="28" max="-2" attributes="0"/>
-                      <EmptySpace pref="515" max="32767" attributes="0"/>
+                      <Component id="jScrollPane5" min="-2" pref="458" max="-2" attributes="0"/>
+                      <EmptySpace pref="85" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -421,7 +530,7 @@
 
               <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
               <SubComponents>
-                <Component class="javax.swing.JTable" name="jTable1">
+                <Component class="javax.swing.JTable" name="tbCotacao">
                   <Properties>
                     <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
                       <Table columnCount="7" rowCount="0">
@@ -433,6 +542,45 @@
                         <Column editable="false" title="Oscila" type="java.lang.Object"/>
                         <Column editable="false" title="Negocios" type="java.lang.Object"/>
                       </Table>
+                    </Property>
+                    <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">
+                      <TableColumnModel selectionModel="0">
+                        <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="false">
+                          <Title/>
+                          <Editor/>
+                          <Renderer/>
+                        </Column>
+                        <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="false">
+                          <Title/>
+                          <Editor/>
+                          <Renderer/>
+                        </Column>
+                        <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="false">
+                          <Title/>
+                          <Editor/>
+                          <Renderer/>
+                        </Column>
+                        <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="false">
+                          <Title/>
+                          <Editor/>
+                          <Renderer/>
+                        </Column>
+                        <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="false">
+                          <Title/>
+                          <Editor/>
+                          <Renderer/>
+                        </Column>
+                        <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="false">
+                          <Title/>
+                          <Editor/>
+                          <Renderer/>
+                        </Column>
+                        <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="false">
+                          <Title/>
+                          <Editor/>
+                          <Renderer/>
+                        </Column>
+                      </TableColumnModel>
                     </Property>
                     <Property name="gridColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -492,10 +640,10 @@
                                   </Group>
                               </Group>
                               <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                  <Component id="txtPrecoCompra" alignment="0" pref="212" max="32767" attributes="0"/>
+                                  <Component id="txtAcaoCompra" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="txtPrecoCompra" alignment="0" max="32767" attributes="0"/>
                                   <Component id="txtQuantCompra" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="txtOrdemRs" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="txtAcaoCompra" max="32767" attributes="0"/>
+                                  <Component id="txtOrdemCompra" alignment="0" pref="212" max="32767" attributes="0"/>
                               </Group>
                           </Group>
                       </Group>
@@ -506,33 +654,33 @@
                                   <Group type="102" alignment="0" attributes="0">
                                       <Component id="jLabel9" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="lblLoteMin" min="-2" max="-2" attributes="0"/>
+                                      <Component id="lblLoteMinCompra" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
                                       <Component id="jLabel21" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="lblValorLot" min="-2" max="-2" attributes="0"/>
+                                      <Component id="lblValorLotCompra" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
                                       <Component id="jLabel19" min="-2" max="-2" attributes="0"/>
                                   </Group>
                                   <Group type="102" alignment="0" attributes="0">
                                       <Component id="jLabel7" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace type="separate" max="-2" attributes="0"/>
-                                      <Component id="lblNegocio" min="-2" max="-2" attributes="0"/>
+                                      <Component id="lblNegocioCompra" min="-2" max="-2" attributes="0"/>
                                   </Group>
                                   <Group type="102" alignment="0" attributes="0">
                                       <Component id="jLabel5" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace type="separate" max="-2" attributes="0"/>
-                                      <Component id="lblOscila" min="-2" max="-2" attributes="0"/>
+                                      <Component id="lblOscilaCompra" min="-2" max="-2" attributes="0"/>
                                   </Group>
                                   <Group type="102" alignment="0" attributes="0">
                                       <Component id="jLabel6" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                      <Component id="lblPrecoAtual" min="-2" max="-2" attributes="0"/>
+                                      <Component id="lblPrecoAtualCompra" min="-2" max="-2" attributes="0"/>
                                   </Group>
                                   <Group type="102" alignment="0" attributes="0">
                                       <Component id="jLabel8" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="lblFatorCot" min="-2" max="-2" attributes="0"/>
+                                      <Component id="lblFatorCotCompra" min="-2" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
                           </Group>
@@ -553,54 +701,54 @@
                           <Group type="102" alignment="1" attributes="0">
                               <Group type="103" groupAlignment="3" attributes="0">
                                   <Component id="jLabel6" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="lblPrecoAtual" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="lblPrecoAtualCompra" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="3" attributes="0">
                                   <Component id="jLabel5" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="lblOscila" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="lblOscilaCompra" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="3" attributes="0">
                                   <Component id="jLabel7" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="lblNegocio" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="lblNegocioCompra" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace min="-2" pref="5" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="3" attributes="0">
                                   <Component id="jLabel8" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="lblFatorCot" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="lblFatorCotCompra" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="3" attributes="0">
                                   <Component id="jLabel9" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="lblLoteMin" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="lblLoteMinCompra" alignment="3" min="-2" max="-2" attributes="0"/>
                                   <Component id="jLabel21" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="lblValorLot" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="lblValorLotCompra" alignment="3" min="-2" max="-2" attributes="0"/>
                                   <Component id="jLabel19" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                           <Group type="102" alignment="1" attributes="0">
                               <Group type="103" groupAlignment="3" attributes="0">
                                   <Component id="jLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="txtAcaoCompra" alignment="3" min="-2" max="-2" attributes="0"/>
                                   <Component id="btnAcaoCompra" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="txtAcaoCompra" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="3" attributes="0">
                                   <Component id="jLabel2" alignment="3" min="-2" max="-2" attributes="0"/>
                                   <Component id="txtPrecoCompra" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
-                              <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="1" attributes="0">
-                                  <Component id="txtQuantCompra" alignment="1" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jLabel3" alignment="1" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="jLabel3" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="txtQuantCompra" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace min="-2" pref="31" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="1" attributes="0">
-                                  <Component id="jLabel4" alignment="1" min="-2" max="-2" attributes="0"/>
-                                  <Component id="txtOrdemRs" alignment="1" min="-2" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="jLabel4" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="txtOrdemCompra" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
-                              <EmptySpace min="-2" pref="70" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="67" max="-2" attributes="0"/>
                               <Component id="btnComprar" min="-2" max="-2" attributes="0"/>
                           </Group>
                       </Group>
@@ -610,15 +758,6 @@
             </DimensionLayout>
           </Layout>
           <SubComponents>
-            <Component class="javax.swing.JTextField" name="txtPrecoCompra">
-              <Properties>
-                <Property name="horizontalAlignment" type="int" value="4"/>
-                <Property name="text" type="java.lang.String" value="0,00"/>
-              </Properties>
-              <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtPrecoCompraActionPerformed"/>
-              </Events>
-            </Component>
             <Component class="javax.swing.JLabel" name="jLabel1">
               <Properties>
                 <Property name="text" type="java.lang.String" value="A&#xe7;&#xf5;es"/>
@@ -634,21 +773,6 @@
                 <Property name="text" type="java.lang.String" value="Quantidade"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="txtQuantCompra">
-              <Properties>
-                <Property name="horizontalAlignment" type="int" value="4"/>
-                <Property name="text" type="java.lang.String" value="0"/>
-              </Properties>
-              <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtQuantCompraActionPerformed"/>
-              </Events>
-            </Component>
-            <Component class="javax.swing.JTextField" name="txtOrdemRs">
-              <Properties>
-                <Property name="horizontalAlignment" type="int" value="4"/>
-                <Property name="text" type="java.lang.String" value="0,00"/>
-              </Properties>
-            </Component>
             <Component class="javax.swing.JLabel" name="jLabel4">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Ordem R$"/>
@@ -659,12 +783,12 @@
                 <Property name="text" type="java.lang.String" value="Pre&#xe7;o atual: "/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="lblPrecoAtual">
+            <Component class="javax.swing.JLabel" name="lblPrecoAtualCompra">
               <Properties>
                 <Property name="text" type="java.lang.String" value="0,00"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="lblOscila">
+            <Component class="javax.swing.JLabel" name="lblOscilaCompra">
               <Properties>
                 <Property name="text" type="java.lang.String" value="0.00"/>
               </Properties>
@@ -679,7 +803,7 @@
                 <Property name="text" type="java.lang.String" value="Negocios: "/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="lblNegocio">
+            <Component class="javax.swing.JLabel" name="lblNegocioCompra">
               <Properties>
                 <Property name="text" type="java.lang.String" value="0"/>
               </Properties>
@@ -689,7 +813,7 @@
                 <Property name="text" type="java.lang.String" value="Fator de cota&#xe7;&#xe3;o: "/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="lblFatorCot">
+            <Component class="javax.swing.JLabel" name="lblFatorCotCompra">
               <Properties>
                 <Property name="text" type="java.lang.String" value="0"/>
               </Properties>
@@ -699,7 +823,7 @@
                 <Property name="text" type="java.lang.String" value="Lote min&#xed;mo: "/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="lblLoteMin">
+            <Component class="javax.swing.JLabel" name="lblLoteMinCompra">
               <Properties>
                 <Property name="text" type="java.lang.String" value="0"/>
               </Properties>
@@ -709,7 +833,7 @@
                 <Property name="text" type="java.lang.String" value="("/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="lblValorLot">
+            <Component class="javax.swing.JLabel" name="lblValorLotCompra">
               <Properties>
                 <Property name="text" type="java.lang.String" value="0,00"/>
               </Properties>
@@ -724,12 +848,18 @@
                 <Property name="text" type="java.lang.String" value="Prosseguir"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="txtAcaoCompra">
-            </Component>
             <Component class="javax.swing.JButton" name="btnAcaoCompra">
               <Properties>
                 <Property name="text" type="java.lang.String" value="ox"/>
               </Properties>
+            </Component>
+            <Component class="javax.swing.JFormattedTextField" name="txtAcaoCompra">
+            </Component>
+            <Component class="javax.swing.JFormattedTextField" name="txtPrecoCompra">
+            </Component>
+            <Component class="javax.swing.JFormattedTextField" name="txtQuantCompra">
+            </Component>
+            <Component class="javax.swing.JFormattedTextField" name="txtOrdemCompra">
             </Component>
           </SubComponents>
         </Container>
@@ -750,13 +880,13 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="btnPesquisa" min="-2" max="-2" attributes="0"/>
+                      <Component id="btnPesquisaBook" min="-2" max="-2" attributes="0"/>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="jScrollPane6" alignment="0" min="-2" pref="239" max="-2" attributes="0"/>
-                          <Component id="txtPesquisa" alignment="0" min="-2" pref="243" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                          <Component id="jScrollPane6" pref="239" max="32767" attributes="0"/>
+                          <Component id="txtPesquisaBook" max="32767" attributes="0"/>
                       </Group>
-                      <EmptySpace pref="859" max="32767" attributes="0"/>
+                      <EmptySpace pref="863" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -765,8 +895,8 @@
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="txtPesquisa" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="btnPesquisa" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="btnPesquisaBook" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtPesquisaBook" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
                       <Component id="jScrollPane6" min="-2" pref="179" max="-2" attributes="0"/>
@@ -776,12 +906,10 @@
             </DimensionLayout>
           </Layout>
           <SubComponents>
-            <Component class="javax.swing.JButton" name="btnPesquisa">
+            <Component class="javax.swing.JButton" name="btnPesquisaBook">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Pesquisar"/>
               </Properties>
-            </Component>
-            <Component class="javax.swing.JTextField" name="txtPesquisa">
             </Component>
             <Container class="javax.swing.JScrollPane" name="jScrollPane6">
               <AuxValues>
@@ -805,6 +933,8 @@
                 </Component>
               </SubComponents>
             </Container>
+            <Component class="javax.swing.JFormattedTextField" name="txtPesquisaBook">
+            </Component>
           </SubComponents>
         </Container>
         <Container class="javax.swing.JDesktopPane" name="jpnVenda">
@@ -847,11 +977,11 @@
                                       <EmptySpace min="-2" pref="66" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
-                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                  <Component id="txtQuantAcaoVd" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="txtOrdemVd" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="txtPrecoVd" alignment="0" pref="212" max="32767" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
                                   <Component id="txtAcaoVenda" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="txtPrecoVenda" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="txtQuantAcaoVenda" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="txtOrdemVenda" alignment="0" pref="212" max="32767" attributes="0"/>
                               </Group>
                           </Group>
                           <Component id="btnVenda" alignment="1" min="-2" max="-2" attributes="0"/>
@@ -873,12 +1003,12 @@
                                   <Group type="102" alignment="0" attributes="0">
                                       <Component id="jLabel15" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace type="separate" max="-2" attributes="0"/>
-                                      <Component id="lblNegocioVd" min="-2" max="-2" attributes="0"/>
+                                      <Component id="lblNegocioVenda" min="-2" max="-2" attributes="0"/>
                                   </Group>
                                   <Group type="102" alignment="0" attributes="0">
                                       <Component id="jLabel14" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                      <Component id="lblPrecoAtualVd" min="-2" max="-2" attributes="0"/>
+                                      <Component id="lblPrecoAtualVenda" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                                       <Component id="jLabel16" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
@@ -891,7 +1021,7 @@
                                           <Group type="102" alignment="1" attributes="0">
                                               <Component id="jLabel23" min="-2" max="-2" attributes="0"/>
                                               <EmptySpace max="-2" attributes="0"/>
-                                              <Component id="ldlLoteMinVd" min="-2" max="-2" attributes="0"/>
+                                              <Component id="ldlLoteMinVenda" min="-2" max="-2" attributes="0"/>
                                               <EmptySpace max="32767" attributes="0"/>
                                               <Component id="jLabel22" min="-2" max="-2" attributes="0"/>
                                           </Group>
@@ -900,11 +1030,11 @@
                                       <Group type="103" groupAlignment="0" attributes="0">
                                           <Group type="102" alignment="0" attributes="0">
                                               <EmptySpace max="-2" attributes="0"/>
-                                              <Component id="lblFatorCotVd" min="-2" max="-2" attributes="0"/>
+                                              <Component id="lblFatorCotVenda" min="-2" max="-2" attributes="0"/>
                                           </Group>
                                           <Group type="102" alignment="1" attributes="0">
                                               <EmptySpace min="-2" pref="2" max="-2" attributes="0"/>
-                                              <Component id="lblValorLoteVd" min="-2" max="-2" attributes="0"/>
+                                              <Component id="lblValorLoteVenda" min="-2" max="-2" attributes="0"/>
                                               <EmptySpace max="-2" attributes="0"/>
                                               <Component id="jLabel20" min="-2" max="-2" attributes="0"/>
                                           </Group>
@@ -917,7 +1047,7 @@
                               <Component id="btnAcaoVenda" min="-2" max="-2" attributes="0"/>
                           </Group>
                       </Group>
-                      <EmptySpace pref="656" max="32767" attributes="0"/>
+                      <EmptySpace min="-2" pref="656" max="-2" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -929,7 +1059,7 @@
                           <Group type="102" alignment="1" attributes="0">
                               <Group type="103" groupAlignment="3" attributes="0">
                                   <Component id="jLabel14" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="lblPrecoAtualVd" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="lblPrecoAtualVenda" alignment="3" min="-2" max="-2" attributes="0"/>
                                   <Component id="jLabel16" alignment="3" min="-2" max="-2" attributes="0"/>
                                   <Component id="lblLucro" alignment="3" min="-2" max="-2" attributes="0"/>
                                   <Component id="jLabel18" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -937,50 +1067,44 @@
                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="3" attributes="0">
                                   <Component id="jLabel15" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="lblNegocioVd" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="lblNegocioVenda" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace min="-2" pref="5" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="3" attributes="0">
                                   <Component id="jLabel17" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="lblFatorCotVd" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="lblFatorCotVenda" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="3" attributes="0">
                                   <Component id="jLabel23" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="lblValorLoteVd" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="lblValorLoteVenda" alignment="3" min="-2" max="-2" attributes="0"/>
                                   <Component id="jLabel20" alignment="3" min="-2" max="-2" attributes="0"/>
                                   <Component id="jLabel22" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="ldlLoteMinVd" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="ldlLoteMinVenda" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                           <Group type="102" alignment="1" attributes="0">
                               <Group type="103" groupAlignment="3" attributes="0">
                                   <Component id="jLabel10" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="txtAcaoVenda" alignment="3" min="-2" max="-2" attributes="0"/>
                                   <Component id="btnAcaoVenda" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="txtAcaoVenda" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
-                              <EmptySpace min="-2" pref="1" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
-                                      <Component id="jLabel11" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
-                                  </Group>
-                                  <Group type="102" alignment="1" attributes="0">
-                                      <Component id="txtPrecoVd" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  </Group>
+                              <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="jLabel11" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="txtPrecoVenda" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
-                              <Group type="103" groupAlignment="1" attributes="0">
-                                  <Component id="txtQuantAcaoVd" alignment="1" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jLabel12" alignment="1" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="jLabel12" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="txtQuantAcaoVenda" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace min="-2" pref="31" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="1" attributes="0">
-                                  <Component id="jLabel13" alignment="1" min="-2" max="-2" attributes="0"/>
-                                  <Component id="txtOrdemVd" alignment="1" min="-2" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="jLabel13" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="txtOrdemVenda" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
-                              <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="31" max="-2" attributes="0"/>
                               <Component id="btnVenda" min="-2" max="-2" attributes="0"/>
                           </Group>
                       </Group>
@@ -1010,12 +1134,12 @@
                 <Property name="text" type="java.lang.String" value="Negocios: "/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="lblNegocioVd">
+            <Component class="javax.swing.JLabel" name="lblNegocioVenda">
               <Properties>
                 <Property name="text" type="java.lang.String" value="0"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="lblPrecoAtualVd">
+            <Component class="javax.swing.JLabel" name="lblPrecoAtualVenda">
               <Properties>
                 <Property name="text" type="java.lang.String" value="0,00"/>
               </Properties>
@@ -1040,12 +1164,12 @@
                 <Property name="text" type="java.lang.String" value="Pre&#xe7;o atual: "/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="lblFatorCotVd">
+            <Component class="javax.swing.JLabel" name="lblFatorCotVenda">
               <Properties>
                 <Property name="text" type="java.lang.String" value="0"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="lblValorLoteVd">
+            <Component class="javax.swing.JLabel" name="lblValorLoteVenda">
               <Properties>
                 <Property name="text" type="java.lang.String" value="0,00"/>
               </Properties>
@@ -1065,7 +1189,7 @@
                 <Property name="text" type="java.lang.String" value="Lote min&#xed;mo: "/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="ldlLoteMinVd">
+            <Component class="javax.swing.JLabel" name="ldlLoteMinVenda">
               <Properties>
                 <Property name="text" type="java.lang.String" value="0"/>
               </Properties>
@@ -1095,29 +1219,6 @@
                 <Property name="text" type="java.lang.String" value="Prosseguir"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="txtOrdemVd">
-              <Properties>
-                <Property name="horizontalAlignment" type="int" value="4"/>
-                <Property name="text" type="java.lang.String" value="0,00"/>
-              </Properties>
-            </Component>
-            <Component class="javax.swing.JTextField" name="txtQuantAcaoVd">
-              <Properties>
-                <Property name="horizontalAlignment" type="int" value="4"/>
-              </Properties>
-              <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtQuantAcaoVdActionPerformed"/>
-              </Events>
-            </Component>
-            <Component class="javax.swing.JTextField" name="txtPrecoVd">
-              <Properties>
-                <Property name="horizontalAlignment" type="int" value="4"/>
-                <Property name="text" type="java.lang.String" value="0,00"/>
-              </Properties>
-              <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtPrecoVdActionPerformed"/>
-              </Events>
-            </Component>
             <Component class="javax.swing.JLabel" name="jLabel13">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Ordem R$"/>
@@ -1138,12 +1239,18 @@
                 <Property name="text" type="java.lang.String" value="A&#xe7;&#xf5;es"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="txtAcaoVenda">
-            </Component>
             <Component class="javax.swing.JButton" name="btnAcaoVenda">
               <Properties>
                 <Property name="text" type="java.lang.String" value="ok"/>
               </Properties>
+            </Component>
+            <Component class="javax.swing.JFormattedTextField" name="txtAcaoVenda">
+            </Component>
+            <Component class="javax.swing.JFormattedTextField" name="txtPrecoVenda">
+            </Component>
+            <Component class="javax.swing.JFormattedTextField" name="txtQuantAcaoVenda">
+            </Component>
+            <Component class="javax.swing.JFormattedTextField" name="txtOrdemVenda">
             </Component>
           </SubComponents>
         </Container>
