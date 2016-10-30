@@ -11,12 +11,12 @@ import java.awt.CardLayout;
  *
  * @author derp_
  */
-public class TelaPrincipal2 extends javax.swing.JInternalFrame {
+public class TelaHomeBroker extends javax.swing.JInternalFrame {
 
     /**
-     * Creates new form TelaPrincipal2
+     * Creates new form TelaHomeBroker
      */
-    public TelaPrincipal2() {
+    public TelaHomeBroker() {
         initComponents();
     }
 
@@ -29,22 +29,11 @@ public class TelaPrincipal2 extends javax.swing.JInternalFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jpnPrincipal = new javax.swing.JDesktopPane();
-        jpnCard = new javax.swing.JDesktopPane();
-        jpnCarteira = new javax.swing.JDesktopPane();
-        jScrollPane2 = new javax.swing.JScrollPane();
-        tbCarteira01 = new javax.swing.JTable();
-        jScrollPane1 = new javax.swing.JScrollPane();
-        tbCarteira02 = new javax.swing.JTable();
-        jScrollPane3 = new javax.swing.JScrollPane();
-        tbCarteira03 = new javax.swing.JTable();
-        jLabel26 = new javax.swing.JLabel();
-        jpnHistorico = new javax.swing.JDesktopPane();
-        jScrollPane4 = new javax.swing.JScrollPane();
-        tbHistorico = new javax.swing.JTable();
-        jpnCotacao = new javax.swing.JDesktopPane();
-        jScrollPane5 = new javax.swing.JScrollPane();
-        tbCotacao = new javax.swing.JTable();
+        jpnBrooker = new javax.swing.JDesktopPane();
+        jpnMenuBrooker = new javax.swing.JDesktopPane();
+        jButton1 = new javax.swing.JButton();
+        jButton2 = new javax.swing.JButton();
+        jButton3 = new javax.swing.JButton();
         jpnCompra = new javax.swing.JDesktopPane();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
@@ -74,6 +63,20 @@ public class TelaPrincipal2 extends javax.swing.JInternalFrame {
         jScrollPane6 = new javax.swing.JScrollPane();
         tbBook = new javax.swing.JTable();
         txtPesquisaBook = new javax.swing.JFormattedTextField();
+        jScrollPane7 = new javax.swing.JScrollPane();
+        tbBook1 = new javax.swing.JTable();
+        jScrollPane8 = new javax.swing.JScrollPane();
+        tbBook2 = new javax.swing.JTable();
+        jScrollPane9 = new javax.swing.JScrollPane();
+        tbBook3 = new javax.swing.JTable();
+        jScrollPane10 = new javax.swing.JScrollPane();
+        tbBook4 = new javax.swing.JTable();
+        jScrollPane11 = new javax.swing.JScrollPane();
+        tbBook5 = new javax.swing.JTable();
+        jScrollPane12 = new javax.swing.JScrollPane();
+        tbBook6 = new javax.swing.JTable();
+        jScrollPane13 = new javax.swing.JScrollPane();
+        tbBook7 = new javax.swing.JTable();
         jpnVenda = new javax.swing.JDesktopPane();
         jLabel17 = new javax.swing.JLabel();
         jLabel15 = new javax.swing.JLabel();
@@ -103,262 +106,77 @@ public class TelaPrincipal2 extends javax.swing.JInternalFrame {
         txtPrecoVenda = new javax.swing.JFormattedTextField();
         txtQuantAcaoVenda = new javax.swing.JFormattedTextField();
         txtOrdemVenda = new javax.swing.JFormattedTextField();
-        jMenuBar1 = new javax.swing.JMenuBar();
-        menuCarteira = new javax.swing.JMenu();
-        menuHistorico = new javax.swing.JMenu();
-        menuCotacao = new javax.swing.JMenu();
-        menuHomeBroker = new javax.swing.JMenu();
-        menuVender02 = new javax.swing.JMenuItem();
-        menuBook = new javax.swing.JMenuItem();
-        menuComprar = new javax.swing.JMenuItem();
-        jMenu1 = new javax.swing.JMenu();
-        menuSair = new javax.swing.JMenuItem();
 
-        setBorder(null);
+        setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         setClosable(true);
         setIconifiable(true);
         setMaximizable(true);
+        setTitle("Home Broker");
+        setToolTipText("Home Broker");
 
-        jpnPrincipal.setBackground(new java.awt.Color(255, 255, 255));
-        jpnPrincipal.setLayout(new java.awt.CardLayout());
+        jpnBrooker.setBackground(new java.awt.Color(255, 255, 153));
+        jpnBrooker.setPreferredSize(new java.awt.Dimension(1000, 400));
+        jpnBrooker.setLayout(new java.awt.CardLayout());
 
-        jpnCard.setBackground(new java.awt.Color(204, 255, 204));
+        jpnMenuBrooker.setBackground(new java.awt.Color(204, 204, 204));
+        jpnMenuBrooker.setPreferredSize(new java.awt.Dimension(1000, 400));
 
-        javax.swing.GroupLayout jpnCardLayout = new javax.swing.GroupLayout(jpnCard);
-        jpnCard.setLayout(jpnCardLayout);
-        jpnCardLayout.setHorizontalGroup(
-            jpnCardLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1209, Short.MAX_VALUE)
-        );
-        jpnCardLayout.setVerticalGroup(
-            jpnCardLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 633, Short.MAX_VALUE)
-        );
-
-        jpnPrincipal.add(jpnCard, "jpnCard");
-
-        jpnCarteira.setBackground(new java.awt.Color(0, 102, 102));
-
-        tbCarteira01.setForeground(new java.awt.Color(255, 255, 255));
-        tbCarteira01.setModel(new javax.swing.table.DefaultTableModel(
-            new Object [][] {
-
-            },
-            new String [] {
-                "Ativo", "Quantidade", "Valor compra", "Valor atual", "Total Compra", "Total Atual", "Lucro/Prejuizo", "%"
-            }
-        ) {
-            boolean[] canEdit = new boolean [] {
-                false, false, false, false, false, false, false, false
-            };
-
-            public boolean isCellEditable(int rowIndex, int columnIndex) {
-                return canEdit [columnIndex];
+        jButton1.setFont(new java.awt.Font("Arial Black", 1, 18)); // NOI18N
+        jButton1.setText("Comprar");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
             }
         });
-        tbCarteira01.setGridColor(new java.awt.Color(255, 255, 255));
-        tbCarteira01.getTableHeader().setReorderingAllowed(false);
-        jScrollPane2.setViewportView(tbCarteira01);
-        if (tbCarteira01.getColumnModel().getColumnCount() > 0) {
-            tbCarteira01.getColumnModel().getColumn(0).setResizable(false);
-            tbCarteira01.getColumnModel().getColumn(1).setResizable(false);
-            tbCarteira01.getColumnModel().getColumn(2).setResizable(false);
-            tbCarteira01.getColumnModel().getColumn(3).setResizable(false);
-            tbCarteira01.getColumnModel().getColumn(4).setResizable(false);
-            tbCarteira01.getColumnModel().getColumn(5).setResizable(false);
-            tbCarteira01.getColumnModel().getColumn(6).setResizable(false);
-            tbCarteira01.getColumnModel().getColumn(7).setResizable(false);
-        }
 
-        tbCarteira02.setModel(new javax.swing.table.DefaultTableModel(
-            new Object [][] {
-                {null, null, null, null, null, null}
-            },
-            new String [] {
-                "", "", "Total Compra", "Total Atual", "Lucro/Prejuizo", "%"
-            }
-        ) {
-            boolean[] canEdit = new boolean [] {
-                false, false, false, false, false, false
-            };
-
-            public boolean isCellEditable(int rowIndex, int columnIndex) {
-                return canEdit [columnIndex];
+        jButton2.setFont(new java.awt.Font("Arial Black", 1, 18)); // NOI18N
+        jButton2.setText("Vender");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
             }
         });
-        tbCarteira02.getTableHeader().setReorderingAllowed(false);
-        jScrollPane1.setViewportView(tbCarteira02);
-        if (tbCarteira02.getColumnModel().getColumnCount() > 0) {
-            tbCarteira02.getColumnModel().getColumn(0).setResizable(false);
-            tbCarteira02.getColumnModel().getColumn(1).setResizable(false);
-            tbCarteira02.getColumnModel().getColumn(2).setResizable(false);
-            tbCarteira02.getColumnModel().getColumn(3).setResizable(false);
-            tbCarteira02.getColumnModel().getColumn(4).setResizable(false);
-        }
 
-        tbCarteira03.setModel(new javax.swing.table.DefaultTableModel(
-            new Object [][] {
-                {"CONTA CORRENTE", null, null, null, null, null}
-            },
-            new String [] {
-                "", "", "Disponível", "Em carteira", "Saldo", "%"
-            }
-        ) {
-            boolean[] canEdit = new boolean [] {
-                false, false, false, false, false, false
-            };
-
-            public boolean isCellEditable(int rowIndex, int columnIndex) {
-                return canEdit [columnIndex];
+        jButton3.setFont(new java.awt.Font("Arial Black", 1, 18)); // NOI18N
+        jButton3.setText("Book de ofertas");
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
             }
         });
-        tbCarteira03.getTableHeader().setReorderingAllowed(false);
-        jScrollPane3.setViewportView(tbCarteira03);
-        if (tbCarteira03.getColumnModel().getColumnCount() > 0) {
-            tbCarteira03.getColumnModel().getColumn(0).setResizable(false);
-            tbCarteira03.getColumnModel().getColumn(1).setResizable(false);
-            tbCarteira03.getColumnModel().getColumn(2).setResizable(false);
-            tbCarteira03.getColumnModel().getColumn(3).setResizable(false);
-            tbCarteira03.getColumnModel().getColumn(4).setResizable(false);
-            tbCarteira03.getColumnModel().getColumn(5).setResizable(false);
-        }
 
-        jLabel26.setFont(new java.awt.Font("Arial Black", 2, 24)); // NOI18N
-        jLabel26.setForeground(new java.awt.Color(153, 0, 0));
-        jLabel26.setText("Carteira de ações");
+        jpnMenuBrooker.setLayer(jButton1, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jpnMenuBrooker.setLayer(jButton2, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jpnMenuBrooker.setLayer(jButton3, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
-        jpnCarteira.setLayer(jScrollPane2, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jpnCarteira.setLayer(jScrollPane1, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jpnCarteira.setLayer(jScrollPane3, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jpnCarteira.setLayer(jLabel26, javax.swing.JLayeredPane.DEFAULT_LAYER);
-
-        javax.swing.GroupLayout jpnCarteiraLayout = new javax.swing.GroupLayout(jpnCarteira);
-        jpnCarteira.setLayout(jpnCarteiraLayout);
-        jpnCarteiraLayout.setHorizontalGroup(
-            jpnCarteiraLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jScrollPane2)
-            .addComponent(jScrollPane3)
-            .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 1209, Short.MAX_VALUE)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jpnCarteiraLayout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jLabel26)
-                .addGap(472, 472, 472))
+        javax.swing.GroupLayout jpnMenuBrookerLayout = new javax.swing.GroupLayout(jpnMenuBrooker);
+        jpnMenuBrooker.setLayout(jpnMenuBrookerLayout);
+        jpnMenuBrookerLayout.setHorizontalGroup(
+            jpnMenuBrookerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jpnMenuBrookerLayout.createSequentialGroup()
+                .addContainerGap(473, Short.MAX_VALUE)
+                .addGroup(jpnMenuBrookerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                    .addComponent(jButton3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jButton2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 203, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(324, Short.MAX_VALUE))
         );
-        jpnCarteiraLayout.setVerticalGroup(
-            jpnCarteiraLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jpnCarteiraLayout.createSequentialGroup()
-                .addGap(45, 45, 45)
-                .addComponent(jLabel26)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 56, Short.MAX_VALUE)
-                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 177, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(55, 55, 55)
-                .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(165, 165, 165))
+        jpnMenuBrookerLayout.setVerticalGroup(
+            jpnMenuBrookerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jpnMenuBrookerLayout.createSequentialGroup()
+                .addGap(114, 114, 114)
+                .addComponent(jButton1)
+                .addGap(29, 29, 29)
+                .addComponent(jButton2)
+                .addGap(37, 37, 37)
+                .addComponent(jButton3)
+                .addContainerGap(115, Short.MAX_VALUE))
         );
 
-        jpnPrincipal.add(jpnCarteira, "jpnCarteira");
-
-        jpnHistorico.setBackground(new java.awt.Color(102, 255, 102));
-
-        tbHistorico.setModel(new javax.swing.table.DefaultTableModel(
-            new Object [][] {
-
-            },
-            new String [] {
-                "Dia", "Hora", "Descrição", "Status"
-            }
-        ) {
-            boolean[] canEdit = new boolean [] {
-                false, false, false, false
-            };
-
-            public boolean isCellEditable(int rowIndex, int columnIndex) {
-                return canEdit [columnIndex];
-            }
-        });
-        tbHistorico.setGridColor(new java.awt.Color(255, 255, 255));
-        tbHistorico.getTableHeader().setReorderingAllowed(false);
-        jScrollPane4.setViewportView(tbHistorico);
-        if (tbHistorico.getColumnModel().getColumnCount() > 0) {
-            tbHistorico.getColumnModel().getColumn(0).setResizable(false);
-            tbHistorico.getColumnModel().getColumn(1).setResizable(false);
-            tbHistorico.getColumnModel().getColumn(2).setResizable(false);
-            tbHistorico.getColumnModel().getColumn(3).setResizable(false);
-        }
-
-        jpnHistorico.setLayer(jScrollPane4, javax.swing.JLayeredPane.DEFAULT_LAYER);
-
-        javax.swing.GroupLayout jpnHistoricoLayout = new javax.swing.GroupLayout(jpnHistorico);
-        jpnHistorico.setLayout(jpnHistoricoLayout);
-        jpnHistoricoLayout.setHorizontalGroup(
-            jpnHistoricoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jScrollPane4, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 1209, Short.MAX_VALUE)
-        );
-        jpnHistoricoLayout.setVerticalGroup(
-            jpnHistoricoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jpnHistoricoLayout.createSequentialGroup()
-                .addGap(101, 101, 101)
-                .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 444, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(88, Short.MAX_VALUE))
-        );
-
-        jpnPrincipal.add(jpnHistorico, "jpnHistorico");
-
-        jpnCotacao.setBackground(new java.awt.Color(255, 51, 0));
-
-        tbCotacao.setModel(new javax.swing.table.DefaultTableModel(
-            new Object [][] {
-
-            },
-            new String [] {
-                "Papel", "Nome", "Maxima", "Minima", "Atual", "Oscila", "Negocios"
-            }
-        ) {
-            boolean[] canEdit = new boolean [] {
-                false, false, false, false, false, false, false
-            };
-
-            public boolean isCellEditable(int rowIndex, int columnIndex) {
-                return canEdit [columnIndex];
-            }
-        });
-        tbCotacao.setGridColor(new java.awt.Color(255, 255, 255));
-        tbCotacao.setSelectionBackground(new java.awt.Color(0, 0, 204));
-        tbCotacao.setSelectionForeground(new java.awt.Color(0, 0, 255));
-        tbCotacao.setShowHorizontalLines(false);
-        tbCotacao.getTableHeader().setReorderingAllowed(false);
-        jScrollPane5.setViewportView(tbCotacao);
-        if (tbCotacao.getColumnModel().getColumnCount() > 0) {
-            tbCotacao.getColumnModel().getColumn(0).setResizable(false);
-            tbCotacao.getColumnModel().getColumn(1).setResizable(false);
-            tbCotacao.getColumnModel().getColumn(2).setResizable(false);
-            tbCotacao.getColumnModel().getColumn(3).setResizable(false);
-            tbCotacao.getColumnModel().getColumn(4).setResizable(false);
-            tbCotacao.getColumnModel().getColumn(5).setResizable(false);
-            tbCotacao.getColumnModel().getColumn(6).setResizable(false);
-        }
-
-        jpnCotacao.setLayer(jScrollPane5, javax.swing.JLayeredPane.DEFAULT_LAYER);
-
-        javax.swing.GroupLayout jpnCotacaoLayout = new javax.swing.GroupLayout(jpnCotacao);
-        jpnCotacao.setLayout(jpnCotacaoLayout);
-        jpnCotacaoLayout.setHorizontalGroup(
-            jpnCotacaoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jScrollPane5, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 1209, Short.MAX_VALUE)
-        );
-        jpnCotacaoLayout.setVerticalGroup(
-            jpnCotacaoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jpnCotacaoLayout.createSequentialGroup()
-                .addGap(90, 90, 90)
-                .addComponent(jScrollPane5, javax.swing.GroupLayout.PREFERRED_SIZE, 458, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(85, Short.MAX_VALUE))
-        );
-
-        jpnPrincipal.add(jpnCotacao, "jpnCotacao");
+        jpnBrooker.add(jpnMenuBrooker, "jpnMenuBrooker");
 
         jpnCompra.setBackground(new java.awt.Color(255, 204, 204));
+        jpnCompra.setPreferredSize(new java.awt.Dimension(1000, 400));
 
         jLabel1.setText("Ações");
 
@@ -396,7 +214,7 @@ public class TelaPrincipal2 extends javax.swing.JInternalFrame {
 
         btnComprar.setText("Prosseguir");
 
-        btnAcaoCompra.setText("ox");
+        btnAcaoCompra.setText("ok");
 
         jpnCompra.setLayer(jLabel1, javax.swing.JLayeredPane.DEFAULT_LAYER);
         jpnCompra.setLayer(jLabel2, javax.swing.JLayeredPane.DEFAULT_LAYER);
@@ -482,7 +300,7 @@ public class TelaPrincipal2 extends javax.swing.JInternalFrame {
                     .addGroup(jpnCompraLayout.createSequentialGroup()
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(btnAcaoCompra)))
-                .addContainerGap(669, Short.MAX_VALUE))
+                .addContainerGap(460, Short.MAX_VALUE))
         );
         jpnCompraLayout.setVerticalGroup(
             jpnCompraLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -531,12 +349,13 @@ public class TelaPrincipal2 extends javax.swing.JInternalFrame {
                             .addComponent(txtOrdemCompra, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(67, 67, 67)
                         .addComponent(btnComprar)))
-                .addContainerGap(351, Short.MAX_VALUE))
+                .addContainerGap(118, Short.MAX_VALUE))
         );
 
-        jpnPrincipal.add(jpnCompra, "jpnCompra");
+        jpnBrooker.add(jpnCompra, "jpnCompra");
 
         jpnBook.setBackground(new java.awt.Color(255, 255, 153));
+        jpnBook.setPreferredSize(new java.awt.Dimension(1000, 400));
 
         btnPesquisaBook.setText("Pesquisar");
 
@@ -550,39 +369,148 @@ public class TelaPrincipal2 extends javax.swing.JInternalFrame {
         ));
         jScrollPane6.setViewportView(tbBook);
 
+        tbBook1.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+
+            },
+            new String [] {
+                "Compras", "Vendas"
+            }
+        ));
+        jScrollPane7.setViewportView(tbBook1);
+
+        tbBook2.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+
+            },
+            new String [] {
+                "Compras", "Vendas"
+            }
+        ));
+        jScrollPane8.setViewportView(tbBook2);
+
+        tbBook3.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+
+            },
+            new String [] {
+                "Compras", "Vendas"
+            }
+        ));
+        jScrollPane9.setViewportView(tbBook3);
+
+        tbBook4.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+
+            },
+            new String [] {
+                "Compras", "Vendas"
+            }
+        ));
+        jScrollPane10.setViewportView(tbBook4);
+
+        tbBook5.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+
+            },
+            new String [] {
+                "Compras", "Vendas"
+            }
+        ));
+        jScrollPane11.setViewportView(tbBook5);
+
+        tbBook6.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+
+            },
+            new String [] {
+                "Compras", "Vendas"
+            }
+        ));
+        jScrollPane12.setViewportView(tbBook6);
+
+        tbBook7.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+
+            },
+            new String [] {
+                "Compras", "Vendas"
+            }
+        ));
+        jScrollPane13.setViewportView(tbBook7);
+
         jpnBook.setLayer(btnPesquisaBook, javax.swing.JLayeredPane.DEFAULT_LAYER);
         jpnBook.setLayer(jScrollPane6, javax.swing.JLayeredPane.DEFAULT_LAYER);
         jpnBook.setLayer(txtPesquisaBook, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jpnBook.setLayer(jScrollPane7, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jpnBook.setLayer(jScrollPane8, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jpnBook.setLayer(jScrollPane9, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jpnBook.setLayer(jScrollPane10, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jpnBook.setLayer(jScrollPane11, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jpnBook.setLayer(jScrollPane12, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jpnBook.setLayer(jScrollPane13, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         javax.swing.GroupLayout jpnBookLayout = new javax.swing.GroupLayout(jpnBook);
         jpnBook.setLayout(jpnBookLayout);
         jpnBookLayout.setHorizontalGroup(
             jpnBookLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jpnBookLayout.createSequentialGroup()
-                .addContainerGap()
+                .addGap(2, 2, 2)
                 .addComponent(btnPesquisaBook)
-                .addGap(18, 18, 18)
-                .addGroup(jpnBookLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jScrollPane6, javax.swing.GroupLayout.DEFAULT_SIZE, 239, Short.MAX_VALUE)
-                    .addComponent(txtPesquisaBook))
-                .addContainerGap(863, Short.MAX_VALUE))
+                .addGap(6, 6, 6)
+                .addGroup(jpnBookLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jpnBookLayout.createSequentialGroup()
+                        .addComponent(jScrollPane10, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                        .addGap(32, 32, 32))
+                    .addGroup(jpnBookLayout.createSequentialGroup()
+                        .addGroup(jpnBookLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(txtPesquisaBook, javax.swing.GroupLayout.PREFERRED_SIZE, 239, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jScrollPane11, javax.swing.GroupLayout.PREFERRED_SIZE, 231, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                .addGroup(jpnBookLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jScrollPane7, javax.swing.GroupLayout.PREFERRED_SIZE, 238, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jScrollPane8, javax.swing.GroupLayout.PREFERRED_SIZE, 239, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(jpnBookLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jScrollPane9, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 239, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jScrollPane13, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 238, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(46, 46, 46)
+                .addGroup(jpnBookLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jScrollPane6, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 239, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jScrollPane12, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 238, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(30, 30, 30))
         );
         jpnBookLayout.setVerticalGroup(
             jpnBookLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jpnBookLayout.createSequentialGroup()
-                .addContainerGap()
+                .addGap(113, 113, 113)
                 .addGroup(jpnBookLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnPesquisaBook)
-                    .addComponent(txtPesquisaBook, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txtPesquisaBook, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnPesquisaBook))
                 .addGap(29, 29, 29)
-                .addComponent(jScrollPane6, javax.swing.GroupLayout.PREFERRED_SIZE, 179, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(391, Short.MAX_VALUE))
+                .addGroup(jpnBookLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jpnBookLayout.createSequentialGroup()
+                        .addComponent(jScrollPane8, javax.swing.GroupLayout.PREFERRED_SIZE, 179, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addGroup(jpnBookLayout.createSequentialGroup()
+                        .addGroup(jpnBookLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jScrollPane6, javax.swing.GroupLayout.PREFERRED_SIZE, 179, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jScrollPane9, javax.swing.GroupLayout.PREFERRED_SIZE, 179, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jScrollPane10, javax.swing.GroupLayout.PREFERRED_SIZE, 179, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGroup(jpnBookLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jScrollPane12, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 179, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jScrollPane13, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 179, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jScrollPane7, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 179, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jScrollPane11, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 179, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addContainerGap())
         );
 
-        jpnPrincipal.add(jpnBook, "jpnBook");
+        jpnBrooker.add(jpnBook, "jpnBook");
 
         jpnVenda.setBackground(new java.awt.Color(153, 0, 153));
         jpnVenda.setToolTipText("");
+        jpnVenda.setPreferredSize(new java.awt.Dimension(1000, 400));
 
         jLabel17.setText("Fator de cotação: ");
 
@@ -684,10 +612,10 @@ public class TelaPrincipal2 extends javax.swing.JInternalFrame {
                                 .addComponent(jLabel10)
                                 .addGap(66, 66, 66)))
                         .addGroup(jpnVendaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(txtAcaoVenda)
                             .addComponent(txtPrecoVenda)
                             .addComponent(txtQuantAcaoVenda)
-                            .addComponent(txtOrdemVenda, javax.swing.GroupLayout.DEFAULT_SIZE, 212, Short.MAX_VALUE)))
+                            .addComponent(txtOrdemVenda)
+                            .addComponent(txtAcaoVenda, javax.swing.GroupLayout.PREFERRED_SIZE, 179, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addComponent(btnVenda))
                 .addGroup(jpnVendaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jpnVendaLayout.createSequentialGroup()
@@ -792,139 +720,30 @@ public class TelaPrincipal2 extends javax.swing.JInternalFrame {
                 .addGroup(jpnVendaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel25)
                     .addComponent(lblPrecoCompra))
-                .addContainerGap(349, Short.MAX_VALUE))
+                .addContainerGap(116, Short.MAX_VALUE))
         );
 
-        jpnPrincipal.add(jpnVenda, "jpnVenda");
+        jpnBrooker.add(jpnVenda, "jpnVenda");
 
-        menuCarteira.setText("Carteira");
-        menuCarteira.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                menuCarteiraMouseClicked(evt);
-            }
-        });
-        menuCarteira.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                menuCarteiraActionPerformed(evt);
-            }
-        });
-        jMenuBar1.add(menuCarteira);
-
-        menuHistorico.setText("Histórico");
-        menuHistorico.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                menuHistoricoMouseClicked(evt);
-            }
-        });
-        jMenuBar1.add(menuHistorico);
-
-        menuCotacao.setText("Cotações");
-        menuCotacao.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                menuCotacaoMouseClicked(evt);
-            }
-        });
-        jMenuBar1.add(menuCotacao);
-
-        menuHomeBroker.setText("Home Broker");
-
-        menuVender02.setText("Vender");
-        menuVender02.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                menuVender02ActionPerformed(evt);
-            }
-        });
-        menuHomeBroker.add(menuVender02);
-
-        menuBook.setText("Book de Ofertas");
-        menuBook.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                menuBookActionPerformed(evt);
-            }
-        });
-        menuHomeBroker.add(menuBook);
-
-        menuComprar.setText("Comprar");
-        menuComprar.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                menuComprarActionPerformed(evt);
-            }
-        });
-        menuHomeBroker.add(menuComprar);
-
-        jMenuBar1.add(menuHomeBroker);
-
-        jMenu1.setText("Sair");
-
-        menuSair.setText("Sair");
-        menuSair.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                menuSairActionPerformed(evt);
-            }
-        });
-        jMenu1.add(menuSair);
-
-        jMenuBar1.add(jMenu1);
-
-        setJMenuBar(jMenuBar1);
-
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(0, 8, Short.MAX_VALUE)
-                .addComponent(jpnPrincipal, javax.swing.GroupLayout.PREFERRED_SIZE, 1209, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 8, Short.MAX_VALUE))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(0, 3, Short.MAX_VALUE)
-                .addComponent(jpnPrincipal, javax.swing.GroupLayout.PREFERRED_SIZE, 633, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 4, Short.MAX_VALUE))
-        );
+        getContentPane().add(jpnBrooker, java.awt.BorderLayout.CENTER);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void menuCarteiraActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuCarteiraActionPerformed
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+     CardLayout cl = (CardLayout) jpnBrooker.getLayout();
+     cl.show(jpnBrooker, "jpnCompra");
+    }//GEN-LAST:event_jButton1ActionPerformed
 
-    }//GEN-LAST:event_menuCarteiraActionPerformed
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        CardLayout cl = (CardLayout) jpnBrooker.getLayout();
+        cl.show(jpnBrooker, "jpnVenda");
+    }//GEN-LAST:event_jButton2ActionPerformed
 
-    private void menuComprarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuComprarActionPerformed
-        CardLayout cl = (CardLayout) jpnPrincipal.getLayout();
-        cl.show(jpnPrincipal, "jpnCompra");
-    }//GEN-LAST:event_menuComprarActionPerformed
-
-    private void menuVender02ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuVender02ActionPerformed
-        CardLayout cl = (CardLayout) jpnPrincipal.getLayout();
-        cl.show(jpnPrincipal, "jpnVenda");
-    }//GEN-LAST:event_menuVender02ActionPerformed
-
-    private void menuBookActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuBookActionPerformed
-        CardLayout cl = (CardLayout) jpnPrincipal.getLayout();
-        cl.show(jpnPrincipal, "jpnBook");
-    }//GEN-LAST:event_menuBookActionPerformed
-
-    private void menuCarteiraMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_menuCarteiraMouseClicked
-        CardLayout cl = (CardLayout) jpnPrincipal.getLayout();
-        cl.show(jpnPrincipal, "jpnCarteira");
-    }//GEN-LAST:event_menuCarteiraMouseClicked
-
-    private void menuHistoricoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_menuHistoricoMouseClicked
-         CardLayout cl = (CardLayout) jpnPrincipal.getLayout();
-        cl.show(jpnPrincipal, "jpnHistorico");
-    }//GEN-LAST:event_menuHistoricoMouseClicked
-
-    private void menuCotacaoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_menuCotacaoMouseClicked
-       CardLayout cl = (CardLayout) jpnPrincipal.getLayout();
-        cl.show(jpnPrincipal, "jpnCotacao");
-    }//GEN-LAST:event_menuCotacaoMouseClicked
-
-    private void menuSairActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuSairActionPerformed
-
-    }//GEN-LAST:event_menuSairActionPerformed
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+         CardLayout cl = (CardLayout) jpnBrooker.getLayout();
+         cl.show(jpnBrooker, "jpnBook");
+    }//GEN-LAST:event_jButton3ActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
@@ -933,6 +752,9 @@ public class TelaPrincipal2 extends javax.swing.JInternalFrame {
     private javax.swing.JButton btnComprar;
     private javax.swing.JButton btnPesquisaBook;
     private javax.swing.JButton btnVenda;
+    private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButton3;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -951,7 +773,6 @@ public class TelaPrincipal2 extends javax.swing.JInternalFrame {
     private javax.swing.JLabel jLabel23;
     private javax.swing.JLabel jLabel24;
     private javax.swing.JLabel jLabel25;
-    private javax.swing.JLabel jLabel26;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
@@ -959,21 +780,18 @@ public class TelaPrincipal2 extends javax.swing.JInternalFrame {
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
-    private javax.swing.JMenu jMenu1;
-    private javax.swing.JMenuBar jMenuBar1;
-    private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JScrollPane jScrollPane2;
-    private javax.swing.JScrollPane jScrollPane3;
-    private javax.swing.JScrollPane jScrollPane4;
-    private javax.swing.JScrollPane jScrollPane5;
+    private javax.swing.JScrollPane jScrollPane10;
+    private javax.swing.JScrollPane jScrollPane11;
+    private javax.swing.JScrollPane jScrollPane12;
+    private javax.swing.JScrollPane jScrollPane13;
     private javax.swing.JScrollPane jScrollPane6;
+    private javax.swing.JScrollPane jScrollPane7;
+    private javax.swing.JScrollPane jScrollPane8;
+    private javax.swing.JScrollPane jScrollPane9;
     private javax.swing.JDesktopPane jpnBook;
-    private javax.swing.JDesktopPane jpnCard;
-    private javax.swing.JDesktopPane jpnCarteira;
+    private javax.swing.JDesktopPane jpnBrooker;
     private javax.swing.JDesktopPane jpnCompra;
-    private javax.swing.JDesktopPane jpnCotacao;
-    private javax.swing.JDesktopPane jpnHistorico;
-    private javax.swing.JDesktopPane jpnPrincipal;
+    private javax.swing.JDesktopPane jpnMenuBrooker;
     private javax.swing.JDesktopPane jpnVenda;
     private javax.swing.JLabel lblCarteira;
     private javax.swing.JLabel lblFatorCotCompra;
@@ -989,20 +807,14 @@ public class TelaPrincipal2 extends javax.swing.JInternalFrame {
     private javax.swing.JLabel lblValorLotCompra;
     private javax.swing.JLabel lblValorLoteVenda;
     private javax.swing.JLabel ldlLoteMinVenda;
-    private javax.swing.JMenuItem menuBook;
-    private javax.swing.JMenu menuCarteira;
-    private javax.swing.JMenuItem menuComprar;
-    private javax.swing.JMenu menuCotacao;
-    private javax.swing.JMenu menuHistorico;
-    private javax.swing.JMenu menuHomeBroker;
-    private javax.swing.JMenuItem menuSair;
-    private javax.swing.JMenuItem menuVender02;
     private javax.swing.JTable tbBook;
-    private javax.swing.JTable tbCarteira01;
-    private javax.swing.JTable tbCarteira02;
-    private javax.swing.JTable tbCarteira03;
-    private javax.swing.JTable tbCotacao;
-    private javax.swing.JTable tbHistorico;
+    private javax.swing.JTable tbBook1;
+    private javax.swing.JTable tbBook2;
+    private javax.swing.JTable tbBook3;
+    private javax.swing.JTable tbBook4;
+    private javax.swing.JTable tbBook5;
+    private javax.swing.JTable tbBook6;
+    private javax.swing.JTable tbBook7;
     private javax.swing.JFormattedTextField txtAcaoCompra;
     private javax.swing.JFormattedTextField txtAcaoVenda;
     private javax.swing.JFormattedTextField txtOrdemCompra;

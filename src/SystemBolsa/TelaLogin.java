@@ -32,77 +32,21 @@ public class TelaLogin extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jpnPrincipal = new javax.swing.JDesktopPane();
         jpnLogin = new javax.swing.JDesktopPane();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         txtLogin = new javax.swing.JTextField();
         txtSenha = new javax.swing.JPasswordField();
         btnLogin = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
+        btnTelaCadastro = new javax.swing.JButton();
         jLabel3 = new javax.swing.JLabel();
         jLabel20 = new javax.swing.JLabel();
         btnTelaOperador = new javax.swing.JButton();
-        jpnCadastro = new javax.swing.JDesktopPane();
-        jLabel4 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
-        jLabel10 = new javax.swing.JLabel();
-        txtSenhaCadastro = new javax.swing.JPasswordField();
-        txtSenha2Cadastro = new javax.swing.JPasswordField();
-        jLabel9 = new javax.swing.JLabel();
-        jLabel8 = new javax.swing.JLabel();
-        jLabel7 = new javax.swing.JLabel();
-        btnCadastrar = new javax.swing.JButton();
-        txtCpfCadastro = new javax.swing.JFormattedTextField();
-        jButton3 = new javax.swing.JButton();
-        jLabel12 = new javax.swing.JLabel();
-        txtPlanoCadastro = new javax.swing.JFormattedTextField();
-        txtNomeCadastro = new javax.swing.JFormattedTextField();
-        txtUsuarioCadastro = new javax.swing.JFormattedTextField();
-        lblSenha2 = new javax.swing.JLabel();
-        lblPlanoCadastro = new javax.swing.JLabel();
-        lblUsuarioCadastro = new javax.swing.JLabel();
-        jpnLista = new javax.swing.JDesktopPane();
-        jScrollPane1 = new javax.swing.JScrollPane();
-        tbCadastro = new javax.swing.JTable();
-        jButton1 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
-        jpnCadastroEmpresa = new javax.swing.JDesktopPane();
-        jLabel11 = new javax.swing.JLabel();
-        jLabel13 = new javax.swing.JLabel();
-        jLabel14 = new javax.swing.JLabel();
-        jLabel15 = new javax.swing.JLabel();
-        jLabel16 = new javax.swing.JLabel();
-        jLabel17 = new javax.swing.JLabel();
-        btnCadastroEmpresa = new javax.swing.JButton();
-        jScrollPane2 = new javax.swing.JScrollPane();
-        tbEmpresa = new javax.swing.JTable();
-        btnExcluir = new javax.swing.JButton();
-        btnAtualizar = new javax.swing.JButton();
-        btnSair = new javax.swing.JButton();
-        txtEmpresa = new javax.swing.JFormattedTextField();
-        txtCodPapel = new javax.swing.JFormattedTextField();
-        txtQuantAcao = new javax.swing.JFormattedTextField();
-        txtCnpj = new javax.swing.JFormattedTextField();
-        txtValorPatri = new javax.swing.JFormattedTextField();
-        txtPorcentagemPapel = new javax.swing.JFormattedTextField();
-        jpnLoginOperador = new javax.swing.JDesktopPane();
-        txtLoginOperador = new javax.swing.JTextField();
-        txtSenhaOperador = new javax.swing.JPasswordField();
-        btnLoginOperador = new javax.swing.JButton();
-        jLabel18 = new javax.swing.JLabel();
-        jLabel19 = new javax.swing.JLabel();
-        btnTelaLoginAcionista = new javax.swing.JButton();
-        jLabel21 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle("SystemBolsa");
+        setTitle("Login Usuário");
         setMaximizedBounds(new java.awt.Rectangle(0, 0, 0, 0));
         setResizable(false);
-
-        jpnPrincipal.setBackground(new java.awt.Color(255, 255, 255));
-        jpnPrincipal.setLayout(new java.awt.CardLayout());
 
         jpnLogin.setBackground(new java.awt.Color(0, 153, 51));
         jpnLogin.setName(""); // NOI18N
@@ -129,20 +73,20 @@ public class TelaLogin extends javax.swing.JFrame {
             }
         });
 
-        jButton2.setText("Cadastrar");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        btnTelaCadastro.setText("Cadastrar");
+        btnTelaCadastro.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                btnTelaCadastroActionPerformed(evt);
             }
         });
 
         jLabel3.setFont(new java.awt.Font("Arial Black", 1, 12)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(204, 204, 204));
-        jLabel3.setText("Não é cadastrado?");
+        jLabel3.setText("Não é cadastrado? ->>>");
 
         jLabel20.setFont(new java.awt.Font("Arial Black", 1, 12)); // NOI18N
         jLabel20.setForeground(new java.awt.Color(204, 204, 204));
-        jLabel20.setText("Se é corretor click ao lado");
+        jLabel20.setText("Se é corretor click ao lado ->>>");
 
         btnTelaOperador.setText("Ir");
         btnTelaOperador.addActionListener(new java.awt.event.ActionListener() {
@@ -156,7 +100,7 @@ public class TelaLogin extends javax.swing.JFrame {
         jpnLogin.setLayer(txtLogin, javax.swing.JLayeredPane.DEFAULT_LAYER);
         jpnLogin.setLayer(txtSenha, javax.swing.JLayeredPane.DEFAULT_LAYER);
         jpnLogin.setLayer(btnLogin, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jpnLogin.setLayer(jButton2, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jpnLogin.setLayer(btnTelaCadastro, javax.swing.JLayeredPane.DEFAULT_LAYER);
         jpnLogin.setLayer(jLabel3, javax.swing.JLayeredPane.DEFAULT_LAYER);
         jpnLogin.setLayer(jLabel20, javax.swing.JLayeredPane.DEFAULT_LAYER);
         jpnLogin.setLayer(btnTelaOperador, javax.swing.JLayeredPane.DEFAULT_LAYER);
@@ -165,558 +109,56 @@ public class TelaLogin extends javax.swing.JFrame {
         jpnLogin.setLayout(jpnLoginLayout);
         jpnLoginLayout.setHorizontalGroup(
             jpnLoginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jpnLoginLayout.createSequentialGroup()
-                .addContainerGap(706, Short.MAX_VALUE)
-                .addGroup(jpnLoginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(jpnLoginLayout.createSequentialGroup()
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jpnLoginLayout.createSequentialGroup()
+                .addContainerGap(216, Short.MAX_VALUE)
+                .addGroup(jpnLoginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jpnLoginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(jpnLoginLayout.createSequentialGroup()
+                            .addComponent(jLabel1)
+                            .addGap(18, 18, 18)
+                            .addComponent(txtLogin, javax.swing.GroupLayout.PREFERRED_SIZE, 192, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(jpnLoginLayout.createSequentialGroup()
+                            .addComponent(jLabel2)
+                            .addGap(29, 29, 29)
+                            .addComponent(txtSenha, javax.swing.GroupLayout.PREFERRED_SIZE, 192, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addComponent(btnLogin, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jpnLoginLayout.createSequentialGroup()
                         .addGroup(jpnLoginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(btnLogin)
-                            .addGroup(jpnLoginLayout.createSequentialGroup()
-                                .addGroup(jpnLoginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel3)
-                                    .addGroup(jpnLoginLayout.createSequentialGroup()
-                                        .addGroup(jpnLoginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(jLabel1)
-                                            .addComponent(jLabel2))
-                                        .addGap(18, 18, 18)
-                                        .addGroup(jpnLoginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                            .addComponent(txtLogin)
-                                            .addComponent(txtSenha, javax.swing.GroupLayout.DEFAULT_SIZE, 192, Short.MAX_VALUE))))
-                                .addGap(8, 8, 8)))
-                        .addGap(227, 227, 227))
-                    .addGroup(jpnLoginLayout.createSequentialGroup()
-                        .addComponent(jLabel20)
+                            .addComponent(jLabel20)
+                            .addComponent(jLabel3))
                         .addGap(18, 18, 18)
                         .addGroup(jpnLoginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jButton2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(btnTelaOperador, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                        .addGap(213, 213, 213))))
+                            .addComponent(btnTelaOperador, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(btnTelaCadastro, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                .addGap(88, 88, 88))
         );
         jpnLoginLayout.setVerticalGroup(
             jpnLoginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jpnLoginLayout.createSequentialGroup()
-                .addGap(34, 34, 34)
-                .addGroup(jpnLoginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addContainerGap(35, Short.MAX_VALUE)
+                .addGroup(jpnLoginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel1)
                     .addComponent(txtLogin, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(27, 27, 27)
-                .addGroup(jpnLoginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGroup(jpnLoginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel2)
                     .addComponent(txtSenha, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(28, 28, 28)
+                .addGap(18, 18, 18)
                 .addComponent(btnLogin)
-                .addGap(18, 18, 18)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jpnLoginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton2)
+                    .addComponent(btnTelaCadastro)
                     .addComponent(jLabel3))
-                .addGap(18, 18, 18)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jpnLoginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel20)
-                    .addComponent(btnTelaOperador))
-                .addContainerGap(406, Short.MAX_VALUE))
+                    .addComponent(btnTelaOperador)
+                    .addComponent(jLabel20))
+                .addContainerGap())
         );
 
-        jpnPrincipal.add(jpnLogin, "jpnLogin");
+        getContentPane().add(jpnLogin, java.awt.BorderLayout.CENTER);
         jpnLogin.getAccessibleContext().setAccessibleName("");
         jpnLogin.getAccessibleContext().setAccessibleDescription("");
-
-        jpnCadastro.setBackground(new java.awt.Color(102, 255, 255));
-
-        jLabel4.setFont(new java.awt.Font("Arial Black", 1, 24)); // NOI18N
-        jLabel4.setText("CADASTRO DE ACIONISTAS");
-
-        jLabel6.setFont(new java.awt.Font("Arial Black", 1, 11)); // NOI18N
-        jLabel6.setText("CPF:");
-
-        jLabel5.setFont(new java.awt.Font("Arial Black", 1, 11)); // NOI18N
-        jLabel5.setText("Nome:");
-
-        jLabel10.setFont(new java.awt.Font("Arial Black", 1, 11)); // NOI18N
-        jLabel10.setText("Plano R$:");
-
-        txtSenha2Cadastro.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtSenha2CadastroActionPerformed(evt);
-            }
-        });
-
-        jLabel9.setFont(new java.awt.Font("Arial Black", 1, 11)); // NOI18N
-        jLabel9.setText("Confirmar Senha: ");
-
-        jLabel8.setFont(new java.awt.Font("Arial Black", 1, 11)); // NOI18N
-        jLabel8.setText("Senha");
-
-        jLabel7.setFont(new java.awt.Font("Arial Black", 1, 11)); // NOI18N
-        jLabel7.setText("Usuário: ");
-
-        btnCadastrar.setFont(new java.awt.Font("Arial Black", 1, 11)); // NOI18N
-        btnCadastrar.setText("Cadastrar");
-        btnCadastrar.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnCadastrarActionPerformed(evt);
-            }
-        });
-
-        try {
-            txtCpfCadastro.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("###.###.###-##")));
-        } catch (java.text.ParseException ex) {
-            ex.printStackTrace();
-        }
-
-        jButton3.setText("Lista");
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
-            }
-        });
-
-        jLabel12.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel12.setFont(new java.awt.Font("Arial Black", 3, 10)); // NOI18N
-        jLabel12.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel12.setText("(1500,3000,5000)");
-
-        try {
-            txtPlanoCadastro.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("####")));
-        } catch (java.text.ParseException ex) {
-            ex.printStackTrace();
-        }
-        txtPlanoCadastro.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
-
-        txtUsuarioCadastro.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtUsuarioCadastroActionPerformed(evt);
-            }
-        });
-
-        lblSenha2.setFont(new java.awt.Font("Arial Black", 1, 11)); // NOI18N
-        lblSenha2.setForeground(new java.awt.Color(204, 0, 0));
-        lblSenha2.setToolTipText("");
-
-        lblPlanoCadastro.setFont(new java.awt.Font("Arial Black", 1, 11)); // NOI18N
-        lblPlanoCadastro.setForeground(new java.awt.Color(204, 0, 0));
-        lblPlanoCadastro.setToolTipText("");
-
-        lblUsuarioCadastro.setFont(new java.awt.Font("Arial Black", 1, 11)); // NOI18N
-        lblUsuarioCadastro.setForeground(new java.awt.Color(204, 0, 0));
-        lblUsuarioCadastro.setToolTipText("");
-
-        jpnCadastro.setLayer(jLabel4, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jpnCadastro.setLayer(jLabel6, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jpnCadastro.setLayer(jLabel5, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jpnCadastro.setLayer(jLabel10, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jpnCadastro.setLayer(txtSenhaCadastro, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jpnCadastro.setLayer(txtSenha2Cadastro, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jpnCadastro.setLayer(jLabel9, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jpnCadastro.setLayer(jLabel8, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jpnCadastro.setLayer(jLabel7, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jpnCadastro.setLayer(btnCadastrar, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jpnCadastro.setLayer(txtCpfCadastro, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jpnCadastro.setLayer(jButton3, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jpnCadastro.setLayer(jLabel12, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jpnCadastro.setLayer(txtPlanoCadastro, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jpnCadastro.setLayer(txtNomeCadastro, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jpnCadastro.setLayer(txtUsuarioCadastro, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jpnCadastro.setLayer(lblSenha2, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jpnCadastro.setLayer(lblPlanoCadastro, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jpnCadastro.setLayer(lblUsuarioCadastro, javax.swing.JLayeredPane.DEFAULT_LAYER);
-
-        javax.swing.GroupLayout jpnCadastroLayout = new javax.swing.GroupLayout(jpnCadastro);
-        jpnCadastro.setLayout(jpnCadastroLayout);
-        jpnCadastroLayout.setHorizontalGroup(
-            jpnCadastroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jpnCadastroLayout.createSequentialGroup()
-                .addGap(412, 412, 412)
-                .addGroup(jpnCadastroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel4)
-                    .addGroup(jpnCadastroLayout.createSequentialGroup()
-                        .addGroup(jpnCadastroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addGroup(jpnCadastroLayout.createSequentialGroup()
-                                .addGroup(jpnCadastroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(jLabel9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 124, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGroup(jpnCadastroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addGroup(jpnCadastroLayout.createSequentialGroup()
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addGroup(jpnCadastroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                            .addComponent(txtSenhaCadastro)
-                                            .addComponent(txtSenha2Cadastro, javax.swing.GroupLayout.DEFAULT_SIZE, 203, Short.MAX_VALUE)))
-                                    .addGroup(jpnCadastroLayout.createSequentialGroup()
-                                        .addGap(4, 4, 4)
-                                        .addComponent(txtUsuarioCadastro))))
-                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jpnCadastroLayout.createSequentialGroup()
-                                .addGroup(jpnCadastroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(jpnCadastroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                        .addComponent(jLabel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                        .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGap(41, 41, 41)
-                                .addGroup(jpnCadastroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(txtCpfCadastro, javax.swing.GroupLayout.DEFAULT_SIZE, 203, Short.MAX_VALUE)
-                                    .addComponent(txtPlanoCadastro)
-                                    .addComponent(txtNomeCadastro)))
-                            .addGroup(jpnCadastroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                .addComponent(jButton3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(btnCadastrar, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jpnCadastroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jpnCadastroLayout.createSequentialGroup()
-                                .addComponent(jLabel12)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(lblPlanoCadastro, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(lblUsuarioCadastro, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(lblSenha2, javax.swing.GroupLayout.PREFERRED_SIZE, 168, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addContainerGap(244, Short.MAX_VALUE))
-        );
-        jpnCadastroLayout.setVerticalGroup(
-            jpnCadastroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jpnCadastroLayout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jLabel4)
-                .addGap(75, 75, 75)
-                .addGroup(jpnCadastroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(txtNomeCadastro, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(jpnCadastroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel6)
-                    .addComponent(txtCpfCadastro, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(20, 20, 20)
-                .addGroup(jpnCadastroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel10)
-                    .addComponent(jLabel12)
-                    .addComponent(txtPlanoCadastro, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(lblPlanoCadastro))
-                .addGap(18, 18, 18)
-                .addGroup(jpnCadastroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel7)
-                    .addComponent(txtUsuarioCadastro, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(lblUsuarioCadastro))
-                .addGap(18, 18, 18)
-                .addGroup(jpnCadastroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel8)
-                    .addComponent(txtSenhaCadastro, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(jpnCadastroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel9)
-                    .addComponent(txtSenha2Cadastro, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(lblSenha2))
-                .addGap(18, 18, 18)
-                .addComponent(btnCadastrar)
-                .addGap(18, 18, 18)
-                .addComponent(jButton3)
-                .addGap(223, 223, 223))
-        );
-
-        jpnPrincipal.add(jpnCadastro, "jpnCadastro");
-
-        jpnLista.setBackground(new java.awt.Color(255, 255, 0));
-
-        tbCadastro.setModel(new javax.swing.table.DefaultTableModel(
-            new Object [][] {
-
-            },
-            new String [] {
-                "NOME", "CPF", "PLANO R$", "USUÁRIO", "SENHA"
-            }
-        ));
-        tbCadastro.getTableHeader().setReorderingAllowed(false);
-        jScrollPane1.setViewportView(tbCadastro);
-        if (tbCadastro.getColumnModel().getColumnCount() > 0) {
-            tbCadastro.getColumnModel().getColumn(0).setResizable(false);
-            tbCadastro.getColumnModel().getColumn(1).setResizable(false);
-            tbCadastro.getColumnModel().getColumn(2).setResizable(false);
-            tbCadastro.getColumnModel().getColumn(3).setResizable(false);
-            tbCadastro.getColumnModel().getColumn(4).setResizable(false);
-        }
-
-        jButton1.setText("Voltar");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
-            }
-        });
-
-        jButton4.setText("Tela Login");
-        jButton4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton4ActionPerformed(evt);
-            }
-        });
-
-        jpnLista.setLayer(jScrollPane1, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jpnLista.setLayer(jButton1, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jpnLista.setLayer(jButton4, javax.swing.JLayeredPane.DEFAULT_LAYER);
-
-        javax.swing.GroupLayout jpnListaLayout = new javax.swing.GroupLayout(jpnLista);
-        jpnLista.setLayout(jpnListaLayout);
-        jpnListaLayout.setHorizontalGroup(
-            jpnListaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 1218, Short.MAX_VALUE)
-            .addGroup(jpnListaLayout.createSequentialGroup()
-                .addComponent(jButton1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButton4)
-                .addGap(0, 0, Short.MAX_VALUE))
-        );
-        jpnListaLayout.setVerticalGroup(
-            jpnListaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jpnListaLayout.createSequentialGroup()
-                .addGap(37, 37, 37)
-                .addGroup(jpnListaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton1)
-                    .addComponent(jButton4))
-                .addGap(18, 18, 18)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 246, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(316, Short.MAX_VALUE))
-        );
-
-        jpnPrincipal.add(jpnLista, "jpnLista");
-
-        jpnCadastroEmpresa.setBackground(new java.awt.Color(204, 204, 204));
-
-        jLabel11.setText("Nome da Empresa:");
-
-        jLabel13.setText("CNPJ");
-
-        jLabel14.setText("Valor do patrimõnio: ");
-
-        jLabel15.setText("Código do papel");
-
-        jLabel16.setText("Porcentagem do papel referente ao valor do patrimônio: ");
-
-        jLabel17.setText("Quantidade de ações do papel: ");
-
-        btnCadastroEmpresa.setText("Cadastrar");
-        btnCadastroEmpresa.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnCadastroEmpresaActionPerformed(evt);
-            }
-        });
-
-        tbEmpresa.setModel(new javax.swing.table.DefaultTableModel(
-            new Object [][] {
-
-            },
-            new String [] {
-                "Nomo da empresa", "CNPJ", "Valor do patrimônio", "Papel", "% Papel", "Quantidade de Ações"
-            }
-        ));
-        tbEmpresa.getTableHeader().setReorderingAllowed(false);
-        tbEmpresa.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                tbEmpresaMouseClicked(evt);
-            }
-        });
-        jScrollPane2.setViewportView(tbEmpresa);
-
-        btnExcluir.setText("Excluir");
-        btnExcluir.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnExcluirActionPerformed(evt);
-            }
-        });
-
-        btnAtualizar.setText("Atualizar");
-        btnAtualizar.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnAtualizarActionPerformed(evt);
-            }
-        });
-
-        btnSair.setText("Sair");
-        btnSair.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnSairActionPerformed(evt);
-            }
-        });
-
-        jpnCadastroEmpresa.setLayer(jLabel11, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jpnCadastroEmpresa.setLayer(jLabel13, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jpnCadastroEmpresa.setLayer(jLabel14, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jpnCadastroEmpresa.setLayer(jLabel15, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jpnCadastroEmpresa.setLayer(jLabel16, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jpnCadastroEmpresa.setLayer(jLabel17, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jpnCadastroEmpresa.setLayer(btnCadastroEmpresa, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jpnCadastroEmpresa.setLayer(jScrollPane2, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jpnCadastroEmpresa.setLayer(btnExcluir, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jpnCadastroEmpresa.setLayer(btnAtualizar, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jpnCadastroEmpresa.setLayer(btnSair, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jpnCadastroEmpresa.setLayer(txtEmpresa, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jpnCadastroEmpresa.setLayer(txtCodPapel, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jpnCadastroEmpresa.setLayer(txtQuantAcao, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jpnCadastroEmpresa.setLayer(txtCnpj, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jpnCadastroEmpresa.setLayer(txtValorPatri, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jpnCadastroEmpresa.setLayer(txtPorcentagemPapel, javax.swing.JLayeredPane.DEFAULT_LAYER);
-
-        javax.swing.GroupLayout jpnCadastroEmpresaLayout = new javax.swing.GroupLayout(jpnCadastroEmpresa);
-        jpnCadastroEmpresa.setLayout(jpnCadastroEmpresaLayout);
-        jpnCadastroEmpresaLayout.setHorizontalGroup(
-            jpnCadastroEmpresaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jScrollPane2)
-            .addGroup(jpnCadastroEmpresaLayout.createSequentialGroup()
-                .addGap(29, 29, 29)
-                .addGroup(jpnCadastroEmpresaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jpnCadastroEmpresaLayout.createSequentialGroup()
-                        .addGroup(jpnCadastroEmpresaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jpnCadastroEmpresaLayout.createSequentialGroup()
-                                .addComponent(jLabel11)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(txtEmpresa, javax.swing.GroupLayout.PREFERRED_SIZE, 186, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(jpnCadastroEmpresaLayout.createSequentialGroup()
-                                .addComponent(jLabel15)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(txtCodPapel, javax.swing.GroupLayout.PREFERRED_SIZE, 182, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addGap(131, 131, 131)
-                        .addGroup(jpnCadastroEmpresaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jpnCadastroEmpresaLayout.createSequentialGroup()
-                                .addComponent(jLabel16)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(txtPorcentagemPapel, javax.swing.GroupLayout.PREFERRED_SIZE, 222, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(jpnCadastroEmpresaLayout.createSequentialGroup()
-                                .addComponent(jLabel13)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(txtCnpj, javax.swing.GroupLayout.PREFERRED_SIZE, 208, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(56, 56, 56)
-                                .addComponent(jLabel14)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(txtValorPatri, javax.swing.GroupLayout.PREFERRED_SIZE, 206, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                    .addGroup(jpnCadastroEmpresaLayout.createSequentialGroup()
-                        .addComponent(btnCadastroEmpresa)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(btnExcluir)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(btnAtualizar)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(btnSair, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jpnCadastroEmpresaLayout.createSequentialGroup()
-                        .addComponent(jLabel17)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(txtQuantAcao, javax.swing.GroupLayout.PREFERRED_SIZE, 182, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(164, Short.MAX_VALUE))
-        );
-        jpnCadastroEmpresaLayout.setVerticalGroup(
-            jpnCadastroEmpresaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jpnCadastroEmpresaLayout.createSequentialGroup()
-                .addGap(114, 114, 114)
-                .addGroup(jpnCadastroEmpresaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel11)
-                    .addComponent(jLabel14)
-                    .addComponent(jLabel13)
-                    .addComponent(txtEmpresa, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(txtCnpj, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(txtValorPatri, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(jpnCadastroEmpresaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel15)
-                    .addComponent(jLabel16)
-                    .addComponent(txtCodPapel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(txtPorcentagemPapel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(30, 30, 30)
-                .addGroup(jpnCadastroEmpresaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel17)
-                    .addComponent(txtQuantAcao, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(jpnCadastroEmpresaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnCadastroEmpresa)
-                    .addComponent(btnExcluir)
-                    .addComponent(btnAtualizar)
-                    .addComponent(btnSair))
-                .addGap(72, 72, 72)
-                .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 305, Short.MAX_VALUE))
-        );
-
-        jpnPrincipal.add(jpnCadastroEmpresa, "jpnCadastroEmpresa");
-
-        jpnLoginOperador.setBackground(new java.awt.Color(204, 0, 0));
-
-        txtLoginOperador.setText("admin");
-
-        txtSenhaOperador.setText("admin");
-
-        btnLoginOperador.setText("Entrar");
-        btnLoginOperador.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnLoginOperadorActionPerformed(evt);
-            }
-        });
-        btnLoginOperador.addKeyListener(new java.awt.event.KeyAdapter() {
-            public void keyPressed(java.awt.event.KeyEvent evt) {
-                btnLoginOperadorKeyPressed(evt);
-            }
-        });
-
-        jLabel18.setFont(new java.awt.Font("Arial Black", 1, 12)); // NOI18N
-        jLabel18.setText("Senha: ");
-
-        jLabel19.setFont(new java.awt.Font("Arial Black", 1, 12)); // NOI18N
-        jLabel19.setText("Usuário: ");
-
-        btnTelaLoginAcionista.setText("Voltar");
-        btnTelaLoginAcionista.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnTelaLoginAcionistaActionPerformed(evt);
-            }
-        });
-
-        jLabel21.setFont(new java.awt.Font("Arial Black", 1, 11)); // NOI18N
-        jLabel21.setForeground(new java.awt.Color(204, 204, 204));
-        jLabel21.setText("É acionista? Click no botão ao lado ->>>>");
-
-        jpnLoginOperador.setLayer(txtLoginOperador, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jpnLoginOperador.setLayer(txtSenhaOperador, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jpnLoginOperador.setLayer(btnLoginOperador, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jpnLoginOperador.setLayer(jLabel18, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jpnLoginOperador.setLayer(jLabel19, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jpnLoginOperador.setLayer(btnTelaLoginAcionista, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jpnLoginOperador.setLayer(jLabel21, javax.swing.JLayeredPane.DEFAULT_LAYER);
-
-        javax.swing.GroupLayout jpnLoginOperadorLayout = new javax.swing.GroupLayout(jpnLoginOperador);
-        jpnLoginOperador.setLayout(jpnLoginOperadorLayout);
-        jpnLoginOperadorLayout.setHorizontalGroup(
-            jpnLoginOperadorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jpnLoginOperadorLayout.createSequentialGroup()
-                .addContainerGap(745, Short.MAX_VALUE)
-                .addGroup(jpnLoginOperadorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(jpnLoginOperadorLayout.createSequentialGroup()
-                        .addComponent(jLabel21)
-                        .addGap(32, 32, 32)
-                        .addComponent(btnTelaLoginAcionista, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(btnLoginOperador)
-                    .addGroup(jpnLoginOperadorLayout.createSequentialGroup()
-                        .addGroup(jpnLoginOperadorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel19)
-                            .addComponent(jLabel18))
-                        .addGap(18, 18, 18)
-                        .addGroup(jpnLoginOperadorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(txtLoginOperador)
-                            .addComponent(txtSenhaOperador, javax.swing.GroupLayout.PREFERRED_SIZE, 192, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addGap(90, 90, 90))
-        );
-        jpnLoginOperadorLayout.setVerticalGroup(
-            jpnLoginOperadorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jpnLoginOperadorLayout.createSequentialGroup()
-                .addGap(43, 43, 43)
-                .addGroup(jpnLoginOperadorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel19)
-                    .addComponent(txtLoginOperador, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(27, 27, 27)
-                .addGroup(jpnLoginOperadorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel18)
-                    .addComponent(txtSenhaOperador, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(33, 33, 33)
-                .addGroup(jpnLoginOperadorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(jpnLoginOperadorLayout.createSequentialGroup()
-                        .addComponent(btnLoginOperador)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(btnTelaLoginAcionista))
-                    .addComponent(jLabel21))
-                .addContainerGap(440, Short.MAX_VALUE))
-        );
-
-        jpnPrincipal.add(jpnLoginOperador, "jpnLoginOperador");
-
-        getContentPane().add(jpnPrincipal, java.awt.BorderLayout.CENTER);
 
         pack();
         setLocationRelativeTo(null);
@@ -726,79 +168,34 @@ public class TelaLogin extends javax.swing.JFrame {
     public String senha;
     public String loginOperador;
     public String SenhaOperador;
-    public String nomeCadastro ;
-    public String cpfCadastro;
-    public float PlanoCadastro ;
-    public String UsuarioCadastro ;
-    public String SenhaCadastro ;
-    public String SenhaCadastro2;
+    
+    
     
     
     
     private boolean chekLogin(String login, String senha){
         return login.equals("admin") && senha.equals("admin");
     }
-    private boolean ChekLoginOperador(String loginOperador, String senhaOperador){
-        return  loginOperador.equals("admin") && senhaOperador.equals("admin");
-    }
+    
     
     private void btnLoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLoginActionPerformed
         
       if( this.chekLogin(txtLogin.getText(), new String(txtSenha.getPassword()).trim() )){
           JOptionPane.showMessageDialog(null, "Bem vindo ao SystemBolsa!!!");
-          TelaPrincipal2 ob = new TelaPrincipal2();
-          jpnPrincipal.add(ob);
+          MenuPrincipal ob = new MenuPrincipal();
           ob.setVisible(true);
+          dispose();
+          
       }else{ JOptionPane.showMessageDialog(null, "Os dados informados estão incorretos! =/");
           
       }
     }//GEN-LAST:event_btnLoginActionPerformed
 
-    private void txtSenha2CadastroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtSenha2CadastroActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtSenha2CadastroActionPerformed
-
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        CardLayout cl = (CardLayout) jpnPrincipal.getLayout();
-        cl.show(jpnPrincipal, "jpnCadastro");
-    }//GEN-LAST:event_jButton2ActionPerformed
-
-    private void btnCadastrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCadastrarActionPerformed
-          nomeCadastro = this.txtNomeCadastro.getText();
-          cpfCadastro = this.txtCpfCadastro.getText();
-          PlanoCadastro = Float.parseFloat(this.txtPlanoCadastro.getText());
-          UsuarioCadastro = this.txtUsuarioCadastro.getText();
-          SenhaCadastro = new String(this.txtSenhaCadastro.getPassword()).trim();
-          SenhaCadastro2 = new String(this.txtSenha2Cadastro.getPassword()).trim();
-            
-            if((!(SenhaCadastro.equals(SenhaCadastro2)))){
-                lblSenha2.setText("Senhas Incompatíveis!!!");
-                
-                
-            }else if((PlanoCadastro != 1500) || (PlanoCadastro != 3000) || (PlanoCadastro != 5000)){
-                lblPlanoCadastro.setText("Plano Imcompatível!!!");
-    }/*else if(UsuarioCadastro.equals(ABORT)){
-        lblUsuarioCadastro.setText("Nome de usuário indisponível!!!");
-    }*/
-            
-            else{
-
-        DefaultTableModel jTbCadastro = (DefaultTableModel) tbCadastro.getModel();
-        Object[] dados= {nomeCadastro,cpfCadastro, PlanoCadastro,UsuarioCadastro,SenhaCadastro };
-        jTbCadastro.addRow(dados);
-        JOptionPane.showMessageDialog(null, "Cadastro Efetuado com sucesso!");
-        CardLayout cl = (CardLayout) jpnPrincipal.getLayout();
-        cl.show(jpnPrincipal, "jpnLogin");
-        txtNomeCadastro.setText("");
-        txtCpfCadastro.setText("");
-        txtPlanoCadastro.setText("");
-        txtUsuarioCadastro.setText("");
-        txtSenhaCadastro.setText("");
-        txtSenha2Cadastro.setText("");
-        lblSenha2.setText("");
-        lblPlanoCadastro.setText("");}
-                
-    }//GEN-LAST:event_btnCadastrarActionPerformed
+    private void btnTelaCadastroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnTelaCadastroActionPerformed
+        CadastroAcionista tela = new CadastroAcionista();
+        tela.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_btnTelaCadastroActionPerformed
 
     private void btnLoginKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_btnLoginKeyPressed
    
@@ -808,130 +205,11 @@ public class TelaLogin extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_btnLoginKeyPressed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        CardLayout cl = (CardLayout) jpnPrincipal.getLayout();
-        cl.show(jpnPrincipal, "jpnCadastro");
-    }//GEN-LAST:event_jButton1ActionPerformed
-
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        nomeCadastro = this.txtNomeCadastro.getText();
-          cpfCadastro = this.txtCpfCadastro.getText();
-          PlanoCadastro = Float.parseFloat(this.txtPlanoCadastro.getText());
-          UsuarioCadastro = this.txtUsuarioCadastro.getText();
-          SenhaCadastro = new String(this.txtSenhaCadastro.getPassword()).trim();
-          SenhaCadastro2 = new String(this.txtSenha2Cadastro.getPassword()).trim();
-            
-            if((!(SenhaCadastro.equals(SenhaCadastro2)))){
-                lblSenha2.setText("Senhas Incompatíveis!!!");
-                
-                
-            }else if((PlanoCadastro != 1500) || (PlanoCadastro != 3000) || (PlanoCadastro != 5000)){
-                lblPlanoCadastro.setText("Plano Imcompatível!!!");
-    }/*else if(UsuarioCadastro.equals(ABORT)){
-        lblUsuarioCadastro.setText("Nome de usuário indisponível!!!");
-    }*/
-            
-            else{
-
-        DefaultTableModel jTbCadastro = (DefaultTableModel) tbCadastro.getModel();
-        Object[] dados= {nomeCadastro,cpfCadastro, PlanoCadastro,UsuarioCadastro,SenhaCadastro };
-        jTbCadastro.addRow(dados);
-        JOptionPane.showMessageDialog(null, "Cadastro Efetuado com sucesso!");
-        CardLayout cl = (CardLayout) jpnPrincipal.getLayout();
-        cl.show(jpnPrincipal, "jpnLista");
-        txtNomeCadastro.setText("");
-        txtCpfCadastro.setText("");
-        txtPlanoCadastro.setText("");
-        txtUsuarioCadastro.setText("");
-        txtSenhaCadastro.setText("");
-        txtSenha2Cadastro.setText("");
-        lblSenha2.setText("");
-        lblPlanoCadastro.setText("");}
-        
-    }//GEN-LAST:event_jButton3ActionPerformed
-
-    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
-        CardLayout cl = (CardLayout) jpnPrincipal.getLayout();
-        cl.show(jpnPrincipal, "jpnLogin");
-    }//GEN-LAST:event_jButton4ActionPerformed
-
-    private void btnCadastroEmpresaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCadastroEmpresaActionPerformed
-        DefaultTableModel jTbCadastro = (DefaultTableModel) tbEmpresa.getModel();
-        Object[] dados= {txtEmpresa.getText(), txtCnpj.getText(),txtValorPatri.getText(),txtCodPapel.getText(),txtPorcentagemPapel.getText(),txtQuantAcao.getText() };
-        jTbCadastro.addRow(dados);
-        JOptionPane.showMessageDialog(null, "Cadastro Efetuado com sucesso!");
-
-    }//GEN-LAST:event_btnCadastroEmpresaActionPerformed
-
-    private void btnLoginOperadorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLoginOperadorActionPerformed
-        if( this.ChekLoginOperador(txtLoginOperador.getText(), new String(txtSenhaOperador.getPassword()).trim() )){
-          JOptionPane.showMessageDialog(null, "Olá operador, bem vindo ao SystemBolsa!!!");
-          CardLayout cl = (CardLayout) jpnPrincipal.getLayout();
-        cl.show(jpnPrincipal, "jpnCadastroEmpresa");
-      }else{ JOptionPane.showMessageDialog(null, "Os dados informados estão incorretos! =/");
-          
-      }
-    }//GEN-LAST:event_btnLoginOperadorActionPerformed
-
-    private void btnLoginOperadorKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_btnLoginOperadorKeyPressed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnLoginOperadorKeyPressed
-
     private void btnTelaOperadorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnTelaOperadorActionPerformed
-        CardLayout cl = (CardLayout) jpnPrincipal.getLayout();
-        cl.show(jpnPrincipal, "jpnLoginOperador");
+        LoginCorretor tela = new LoginCorretor();
+        tela.setVisible(true);
+        dispose();
     }//GEN-LAST:event_btnTelaOperadorActionPerformed
-
-    private void btnSairActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSairActionPerformed
-        JOptionPane.showMessageDialog(null, "Até mais!!!");
-        CardLayout cl = (CardLayout) jpnPrincipal.getLayout();
-        cl.show(jpnPrincipal, "jpnLoginOperador");
-    }//GEN-LAST:event_btnSairActionPerformed
-
-    private void btnTelaLoginAcionistaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnTelaLoginAcionistaActionPerformed
-        CardLayout cl = (CardLayout) jpnPrincipal.getLayout();
-        cl.show(jpnPrincipal, "jpnLogin");
-    }//GEN-LAST:event_btnTelaLoginAcionistaActionPerformed
-
-    private void btnExcluirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnExcluirActionPerformed
-        if(tbEmpresa.getSelectedRow()!= -1){
-        
-        DefaultTableModel jTbCadastro = (DefaultTableModel) tbEmpresa.getModel();
-        jTbCadastro.removeRow(tbEmpresa.getSelectedRow());
-        //JOptionPane.showMessageDialog(null, "Linha selecionada: "+tbEmpresa.getSelectedRow() );
-        }else{
-            JOptionPane.showMessageDialog(null, "Selecione uma empresa para excluir!!!");
-        }
-    }//GEN-LAST:event_btnExcluirActionPerformed
-
-    private void tbEmpresaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tbEmpresaMouseClicked
-       if(tbEmpresa.getSelectedRow()!= -1){
-           
-           txtEmpresa.setText(tbEmpresa.getValueAt(tbEmpresa.getSelectedRow(), 0).toString());
-           txtCnpj.setText(tbEmpresa.getValueAt(tbEmpresa.getSelectedRow(), 1).toString());
-           txtValorPatri.setText(tbEmpresa.getValueAt(tbEmpresa.getSelectedRow(), 2).toString());
-           txtCodPapel.setText(tbEmpresa.getValueAt(tbEmpresa.getSelectedRow(), 3).toString());
-           txtPorcentagemPapel.setText(tbEmpresa.getValueAt(tbEmpresa.getSelectedRow(), 4).toString());
-           txtQuantAcao.setText(tbEmpresa.getValueAt(tbEmpresa.getSelectedRow(), 5).toString());
-       }
-    }//GEN-LAST:event_tbEmpresaMouseClicked
-
-    private void btnAtualizarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAtualizarActionPerformed
-        if(tbEmpresa.getSelectedRow()!= -1){
-           
-          tbEmpresa.setValueAt(txtEmpresa.getText(),tbEmpresa.getSelectedRow() , 0);
-          tbEmpresa.setValueAt(txtCnpj.getText(),tbEmpresa.getSelectedRow() , 1);
-          tbEmpresa.setValueAt(txtValorPatri.getText(),tbEmpresa.getSelectedRow() , 2);
-          tbEmpresa.setValueAt(txtCodPapel.getText(),tbEmpresa.getSelectedRow() , 3);
-          tbEmpresa.setValueAt(txtPorcentagemPapel.getText(),tbEmpresa.getSelectedRow() , 4);
-          tbEmpresa.setValueAt(txtQuantAcao.getText(),tbEmpresa.getSelectedRow() , 5);
-       }
-        JOptionPane.showMessageDialog(null, "Item atualizado com sucesso.");
-    }//GEN-LAST:event_btnAtualizarActionPerformed
-
-    private void txtUsuarioCadastroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtUsuarioCadastroActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtUsuarioCadastroActionPerformed
 
     /**
      * @param args the command line arguments
@@ -970,68 +248,15 @@ public class TelaLogin extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnAtualizar;
-    private javax.swing.JButton btnCadastrar;
-    private javax.swing.JButton btnCadastroEmpresa;
-    private javax.swing.JButton btnExcluir;
     private javax.swing.JButton btnLogin;
-    private javax.swing.JButton btnLoginOperador;
-    private javax.swing.JButton btnSair;
-    private javax.swing.JButton btnTelaLoginAcionista;
+    private javax.swing.JButton btnTelaCadastro;
     private javax.swing.JButton btnTelaOperador;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel10;
-    private javax.swing.JLabel jLabel11;
-    private javax.swing.JLabel jLabel12;
-    private javax.swing.JLabel jLabel13;
-    private javax.swing.JLabel jLabel14;
-    private javax.swing.JLabel jLabel15;
-    private javax.swing.JLabel jLabel16;
-    private javax.swing.JLabel jLabel17;
-    private javax.swing.JLabel jLabel18;
-    private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel20;
-    private javax.swing.JLabel jLabel21;
     private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel9;
-    private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JScrollPane jScrollPane2;
-    private javax.swing.JDesktopPane jpnCadastro;
-    private javax.swing.JDesktopPane jpnCadastroEmpresa;
-    private javax.swing.JDesktopPane jpnLista;
     private javax.swing.JDesktopPane jpnLogin;
-    private javax.swing.JDesktopPane jpnLoginOperador;
-    private javax.swing.JDesktopPane jpnPrincipal;
-    private javax.swing.JLabel lblPlanoCadastro;
-    private javax.swing.JLabel lblSenha2;
-    private javax.swing.JLabel lblUsuarioCadastro;
-    private javax.swing.JTable tbCadastro;
-    private javax.swing.JTable tbEmpresa;
-    private javax.swing.JFormattedTextField txtCnpj;
-    private javax.swing.JFormattedTextField txtCodPapel;
-    private javax.swing.JFormattedTextField txtCpfCadastro;
-    private javax.swing.JFormattedTextField txtEmpresa;
     private javax.swing.JTextField txtLogin;
-    private javax.swing.JTextField txtLoginOperador;
-    private javax.swing.JFormattedTextField txtNomeCadastro;
-    private javax.swing.JFormattedTextField txtPlanoCadastro;
-    private javax.swing.JFormattedTextField txtPorcentagemPapel;
-    private javax.swing.JFormattedTextField txtQuantAcao;
     private javax.swing.JPasswordField txtSenha;
-    private javax.swing.JPasswordField txtSenha2Cadastro;
-    private javax.swing.JPasswordField txtSenhaCadastro;
-    private javax.swing.JPasswordField txtSenhaOperador;
-    private javax.swing.JFormattedTextField txtUsuarioCadastro;
-    private javax.swing.JFormattedTextField txtValorPatri;
     // End of variables declaration//GEN-END:variables
 }
